@@ -41,7 +41,7 @@ const Gallery = () => {
             onCardLeftScreen={() => outofFrame(person.name)}
           >
             <div className='glass-blur p-2 m-2 flex w-72 '>
-              <img src={`${person.url}`} className="w-full" />
+              <Image alt='photo' src={`${person.url}`} className="w-full" width={500} height={500} />
             </div>
           </TinderCard>;
         })}

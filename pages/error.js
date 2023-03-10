@@ -1,10 +1,11 @@
 import React from 'react'
-
 const error = () => {
   return (
     <div>
       <div className="container">
-  <img src="https://i.imgur.com/qIufhof.png" />
+  <h1>
+    404
+  </h1>
   <h1>
     Internal server error
   </h1>

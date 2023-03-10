@@ -35,7 +35,7 @@ const Addmission = () => {
               <div className="flex m-2 justify-center items-center">
                 <div className="col-xs-3">
                   <label className="label" htmlFor="name">
-                    Student's Name *
+                    Student Name *
                   </label>
                 </div>
                 <div className="col-xs-3">
@@ -232,7 +232,7 @@ const Addmission = () => {
               <div className="flex m-2 justify-center items-center">
                 <div className="col-xs-3">
                   <label className="label" htmlFor="name">
-                    Father's Name *
+                    Father Name *
                   </label>
                 </div>
                 <div className="col-xs-3">
@@ -272,7 +272,7 @@ const Addmission = () => {
               <div className="flex m-2 justify-center items-center">
                 <div className="col-xs-3">
                   <label className="label" htmlFor="dob">
-                    Father's Mobile No *<br />
+                    Father Mobile No *<br />
                     <span style={{ fontSize: 10 }}>
                       (SMS will be sent on this number)
                     </span>
@@ -298,7 +298,7 @@ const Addmission = () => {
                 </div>
                 <div className="col-xs-3">
                   <label className="label" htmlFor="dob">
-                    Father's Whatsapp No *
+                    Father Whatsapp No *
                   </label>
                 </div>
                 <div className="col-xs-3">
@@ -323,7 +323,7 @@ const Addmission = () => {
               <div className="flex m-2 justify-center items-center">
                 <div className="col-xs-3">
                   <label className="label" htmlFor="name">
-                    Mother's Name
+                    Mother Name
                   </label>
                 </div>
                 <div className="col-xs-3">
