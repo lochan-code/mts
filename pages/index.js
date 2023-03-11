@@ -20,15 +20,11 @@ export default function Home() {
         <div className="flex flex-wrap justify-center m-3 space-x-3">
           <div className="p-3 flex flex-col glass-blur text-center">
             <Image alt='photo' src="/icons/stundent.png" width={100} height={100} />
-            <p className='threed glass p-1 text-3xl'>700+</p>
+            <p className='threed glass p-1 text-3xl'>200+</p>
           </div>
           <div className="p-3 flex flex-col glass-blur text-center">
             <Image alt='photo' src="/icons/teacher.png" width={100} height={100} />
             <p className='threed glass p-1 text-3xl'>15+</p>
-          </div>
-          <div className="p-3 flex flex-col glass-blur text-center">
-            <Image alt='photo' src="/icons/school.png" width={100} height={100} />
-            <p className='threed glass p-1 text-3xl'>2</p>
           </div>
         </div>
       </div>
@@ -42,18 +38,9 @@ export default function Home() {
           <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
             <Image alt='photo' src="/icons/check.png" width={40} height={40} />
             <h1 className='ml-1 bungee text-white'>Medium: English</h1>
-          </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
+          </div>   <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
             <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'> Pre Primary Section Available</h1>
-          </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Board for ClassName 10th RBSE</h1>
-          </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Board for ClassName 12th RBSE</h1>
-          </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>ClassNamees: From ClassName 1 to ClassName 12</h1>
+            <h1 className='ml-1 bungee text-white'>From 1 to 12</h1>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
             <Image alt='photo' src="/icons/check.png" width={40} height={40} />
             <h1 className='ml-1 bungee text-white'>Total Teachers: 15+</h1>
@@ -76,17 +63,11 @@ export default function Home() {
             <Image alt='photo' src="/icons/check.png" width={40} height={40} />
             <h1 className='ml-1 bungee text-white'>Drinking Water</h1>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/cross.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Meal Provided</h1>
-          </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
             <Image alt='photo' src="/icons/check.png" width={40} height={40} />
             <h1 className='ml-1 bungee text-white'>Contact Teacher</h1>
-          </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Teacher Teaching with Fun</h1>
-          </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Students Motivated</h1>
+          </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center">
+            <Image alt='photo' src="/icons/check.png" className='max-[768px]:hidden flex' width={40} height={40} />
+            <h1 className='ml-1 text-sm bungee text-white'>Students Motivated</h1>
           </div>
         </div>
       </div>
@@ -150,11 +131,9 @@ export default function Home() {
             <div className="dbl-field">
               <div className="field">
                 <input required type="text" name="name" placeholder="Enter your name" />
-                <Image alt='photo' src='/icons/user.png' width={50} height={50}/>
               </div>
               <div className="field">
                 <input required type="email" name="email" placeholder="Enter your email" />
-                <Image  alt='photo' src="/icons/email.png"   width={50} height={50}/>
               </div>
             </div>
             <div className="message">
@@ -163,18 +142,34 @@ export default function Home() {
                 name="message"
                 defaultValue={""}
               />
-              <Image alt='photo' src="/icons/message.png"  width={50} height={50} />
-
             </div>
             <div className="button-area">
-              <button type="submit">Send Message</button>
+          
+              <button type="submit">
+Send Message<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlnsXlink="http://www.w3.org/1999/xlink"
+  height="25px"
+  width="25px"
+  version="1.1"
+  id="Capa_1" className='ml-2'
+  viewBox="0 0 256.409 256.409"
+  xmlSpace="preserve"
+>
+  <g>
+    <path
+      style={{ fill: "#fff" }}
+      d="M254.189,121.75L132.267,26.191c-1.898-1.632-4.574-2.012-6.853-0.974   c-2.274,1.044-3.737,3.318-3.737,5.825v82.206L10.59,26.191c-1.898-1.632-4.574-2.012-6.853-0.974C1.458,26.262,0,28.536,0,31.043   V225.37c0,2.518,1.479,4.808,3.78,5.842c2.306,1.028,4.993,0.615,6.886-1.061l111.006-89.924v85.143   c0,2.518,1.479,4.808,3.786,5.842c2.301,1.028,4.993,0.615,6.88-1.061l121.917-98.763c1.382-1.224,2.176-3.057,2.154-4.835   C256.397,124.709,255.587,122.952,254.189,121.75z M12.82,211.098V45.011l105.79,81.673L12.82,211.098z M134.492,211.098V127.76   c0.082-0.408,0.261-0.8,0.25-1.207c0-0.392-0.174-0.745-0.25-1.12V45.011l105.79,81.673L134.492,211.098z"
+    />
+  </g>
+</svg></button>
               <span />
             </div>
           </form>
         </div>
 {/* <iframe className='-mb-36' src="https://docs.google.com/forms/d/e/1FAIpQLSf4yBDfigXCVt2krcd91Dz7Emxw9NPvXA0okDJZ23e4RRFU3g/viewform?embedded=true" width="640" height="947" frameBorder="0" marginheight="0" marginWidth="0"></iframe> */}
-        <div className="glass -mt-5 p-1 text-gray-800 mb-24  flex justify-center items-center">
-          <p>© 2022 mts.vercel.app — All Rights Reserved</p>
+        <div className="glass -mt-5 p-1 text-gray-800 mb-24  flex justify-center items-center flex-wrap">
+          <p className='text-center'>© 2023 mts-seven.vercel.app — All Rights Reserved</p>
           <div className="ml-4 flex">
             <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://twitter.com/mtsschool1998">
               <Image alt='photo' src="/icons/twitter.png" width={30} height={30} />
