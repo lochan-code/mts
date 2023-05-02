@@ -171,7 +171,7 @@ export default function Home() {
       <div className="flex flex-col justify-center linear-gradient-contact-vala items-center p-5">
         <div className="wrapper">
           <header>Send us a Message</header>
-          <form id="contact" method='POST' action='https://script.google.com/macros/s/AKfycbwRtjoGdD362r39PmJ6VbZK5crkDoE2hp3bhuYlLTSnjqYLGbDu5-1ZgaTbE9BE4kCFbg/exec'>
+          <form id="contact" method='POST' action='https://script.google.com/macros/s/AKfycbyljiE-vfkaJ_eHmDvmv2mNkRWMTM1sXSEdBFEwuy0U1CdNO2UxbJ0Cye6ccLRMx4gCzg/exec'>
             <div className="dbl-field">
               <div className="field">
                 <input required type="text" name="name" placeholder="Enter your name" />

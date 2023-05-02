@@ -3,7 +3,22 @@ import Head from "next/head";
 import Image from "next/image";
 
 
+
 const Addmission = () => {
+  if (typeof window !== "undefined") {
+  window.addEventListener("DOMContentLoaded", (event) => {
+  const scriptURL = ''
+  const form = document.forms['formName']
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thank you! your form is submitted successfully." ))
+    .then(() => {  window.location.reload(); })
+    .catch(error => console.error('Error!', error.message))
+  })
+ })
+}
   return (
     <>
       <Head>
@@ -19,7 +34,7 @@ const Addmission = () => {
                 <h4>MTS SCHOOL Registration Form</h4>
       </div>
             <form
-              action="https://script.google.com/macros/s/AKfycbyU99ZZVBuQsoWuDuk-Vkpy2xBJN_8FFJHa9zf0RVS0IFCMXwTsQOx8K2UCbiBlR7wd/exec"
+              action="https://script.google.com/macros/s/AKfycbyut6ioKCNm0-qPxplDIex2GAyJfRdka54MIW9AsUEwftC6rQ1bqdFO-g8J3f4YrMn2/exec"
               method="POST"
               className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto w-[95vw] mt-10 md:mt-0 cursor-default"
             >
@@ -34,27 +49,24 @@ const Addmission = () => {
         </span>
         <div className="flex flex-wrap items-center">
               <div className="flex md:m-2 m-1 justify-center items-center">
-                <div className="col-xs-3">
+                <div className="">
                   <label className="label" htmlFor="name">
                     Student Name *
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <div className="input-group">
                     <input
-                    className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2  leading-8 transition-colors duration-200 ease-in-out m-1'
+                    className='bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2  transition-colors duration-200 ease-in-out m-1'
                       name="[st][first_name]"
                       placeholder="First Name"
                       required="required"
                       type="text"
                       id="EnquiryFirstName"
-                    />{" "}
-                    <span className="input-group-addon">
-                      <i className="glyphicon glyphicon-unchecked form-control-feedback" />
-                    </span>
+                    />
                   </div>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <input
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="[st][last_name]"
@@ -66,12 +78,12 @@ const Addmission = () => {
                 </div>
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
-                <div className="col-xs-3">
+                <div className="">
                   <label className="label" htmlFor="dob">
                     Admission Class *
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <div className="input-group">
                     <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                       name="class"
@@ -100,21 +112,18 @@ const Addmission = () => {
                       <option value="XII - ICCP">XII - ICCP</option>
                       <option value="XII - ARTS">XII - ARTS</option>
                       <option value="XII - COMMERCE">XII - COMMERCE</option>
-                    </select>{" "}
-                    <span className="input-group-addon">
-                      <i className="glyphicon glyphicon-unchecked form-control-feedback" />
-                    </span>
+                    </select>
                   </div>
                 </div>
               </div>
               <br />
               <div className="flex md:m-2 m-1 justify-center items-center">
-                <div className="col-xs-3">
+                <div className="">
                   <label className="label" htmlFor="name">
                     Medium
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="medium"
                     required="required"
@@ -123,11 +132,11 @@ const Addmission = () => {
                     <option value="">Select Medium</option>
                     <option value="English">English</option>
                     <option value="Hindi">Hindi</option>
-                  </select>{" "}
+                  </select>
                 </div>
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
-                <div className="col-xs-3">
+                <div className="">
                   <label className="label" htmlFor="dob">
                     Date of Birth
                     <br />
@@ -136,7 +145,7 @@ const Addmission = () => {
                     </span>
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <input
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="date_of_birth"
@@ -144,15 +153,15 @@ const Addmission = () => {
                     required="required"
                     type="date"
                     id="EnquiryDateOfBirth"
-                  />{" "}
+                  />
                 </div>
               
-              </div>  <div className="flex md:m-2 m-1 justify-center items-center">  <div className="col-xs-3">
+              </div>  <div className="flex md:m-2 m-1 justify-center items-center">  <div className="">
                   <label className="label" htmlFor="dob">
                     Gender
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="gender"
                     required="required"
@@ -165,12 +174,12 @@ const Addmission = () => {
                 </div>
                 </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
-                <div className="col-xs-3">
+                <div className="">
                   <label className="label" htmlFor="name">
                     Father Name *
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <div className="input-group">
                     <input
                     className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
@@ -179,13 +188,10 @@ const Addmission = () => {
                       required="required"
                       type="text"
                       id="EnquiryFatherFirstName"
-                    />{" "}
-                    <span className="input-group-addon">
-                      <i className="glyphicon glyphicon-unchecked form-control-feedback" />
-                    </span>
+                    />
                   </div>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <input
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="father_last_name"
@@ -197,7 +203,7 @@ const Addmission = () => {
                 </div>
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
-                <div className="col-xs-3">
+                <div className="">
                   <label className="label" htmlFor="dob">
                     Father Mobile No *<br />
                     <span style={{ fontSize: 10 }}>
@@ -205,7 +211,7 @@ const Addmission = () => {
                     </span>
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <div className="input-group">
                     <input
                     className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
@@ -217,20 +223,17 @@ const Addmission = () => {
                       pattern="[0-9]{10}"
                       type="text"
                       id="EnquiryPhone1"
-                    />{" "}
-                    <span className="input-group-addon">
-                      <i className="glyphicon glyphicon-unchecked form-control-feedback" />
-                    </span>
+                    />
                   </div>
                 </div>
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
-                <div className="col-xs-3">
+                <div className="">
                   <label className="label" htmlFor="name">
                     Mother Name
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <input
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="mother_first_name"
@@ -238,10 +241,10 @@ const Addmission = () => {
                      required="required"
                     type="text"
                     id="EnquiryMotherFirstName"
-                  />{" "}
+                  />
                 </div>
                 
-                <div className="col-xs-3">
+                <div className="">
                   <input
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="mother_last_name"
@@ -249,23 +252,23 @@ const Addmission = () => {
                     required="required"
                     type="text"
                     id="EnquiryMotherLastName"
-                  />{" "}
+                  />
                 </div>
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
-                <div className="col-xs-3">
+                <div className="">
                   <label className="label" htmlFor="name">
                     Address *
                   </label>
                 </div>
-                <div className="col-xs-3">
+                <div className="">
                   <input
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="address"
                     type="text" 
                     required="required"
                     id="EnquiryEmail"
-                  />{" "}
+                  />
                 </div>
               </div>
               <br />
