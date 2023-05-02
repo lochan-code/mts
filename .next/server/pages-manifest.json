@@ -1,8 +1,8 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/about": "pages/about.html",
   "/addmission": "pages/addmission.html",
+  "/about": "pages/about.html",
   "/api/hello": "pages/api/hello.js",
   "/error": "pages/error.html",
   "/error_admission": "pages/error_admission.html",
