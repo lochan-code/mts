@@ -1,26 +1,70 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>MTS School | Mother Teressa Senior Secondary School Baharawanda kalan</title>
+        <title>MTS School | Mother Teressa Senior Secondary School Baharawanda Kalan</title>
         <meta name="description" content="Mother Teressa Senior Secondary School Baharawanda kalan, mts, mts school, mts school baharawanda kalan, barawanda kalan,  mother  teressa school" />
         <link rel="icon" href="/logo/favicon.png" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
       <div>
         <div className="banner">
-          <div className="video flex justify-center">
-            <Image alt='photo' src='/hero.png' width={1200} height={700} className='w-[90vw] h-[70vh]' />
-        </div>
+        <section className="bg-white dark:bg-gray-900">
+  <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+    <div className="mr-auto place-self-center lg:col-span-7">
+      <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+      MTS School
+      </h1>
+      <p className="max-w-2xl mb-6 font-light  lg:mb-8 md:text-lg lg:text-xl text-gray-200">
+      Mother Teressa Senior Secondary School Baharawanda kalan
+      </p>
+      <a
+        href="mailto:contactmtsschool@gmail.com"
+        className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+      >
+        Contact Now
+        <svg
+          className="w-5 h-5 ml-2 -mr-1"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fillRule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </a>
+      <div
+        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+        >
+      <Link
+        href={'/addmission'}
+      >
+        Admission Form
+      </Link>
+      </div>
+    </div>
+    <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+      <Image
+        src="/ceo.png" width={400} height={400}
+        alt="mts"
+      />
+    </div>
+  </div>
+</section>
+
         </div>
         <div className="flex flex-wrap justify-center m-3 space-x-3">
           <div className="p-3 flex flex-col glass-blur text-center">
             <Image alt='photo' src="/icons/stundent.png" width={100} height={100} />
-            <p className='threed glass p-1 text-3xl'>200+</p>
+            <p className='threed glass p-1 text-3xl'>500+</p>
           </div>
           <div className="p-3 flex flex-col glass-blur text-center">
             <Image alt='photo' src="/icons/teacher.png" width={100} height={100} />
@@ -127,7 +171,7 @@ export default function Home() {
       <div className="flex flex-col justify-center linear-gradient-contact-vala items-center p-5">
         <div className="wrapper">
           <header>Send us a Message</header>
-          <form id="contact" method='POST' action='https://script.google.com/macros/s/AKfycbzEn0EMlSAcMfsXskT7zRtejbodanfb8Laafw5jG60bUYux9iV_AZ2d8h_Qgh55nUssHg/exec'>
+          <form id="contact" method='POST' action='https://script.google.com/macros/s/AKfycbwRtjoGdD362r39PmJ6VbZK5crkDoE2hp3bhuYlLTSnjqYLGbDu5-1ZgaTbE9BE4kCFbg/exec'>
             <div className="dbl-field">
               <div className="field">
                 <input required type="text" name="name" placeholder="Enter your name" />
@@ -169,19 +213,19 @@ Send Message<svg
         </div>
 {/* <iframe className='-mb-36' src="https://docs.google.com/forms/d/e/1FAIpQLSf4yBDfigXCVt2krcd91Dz7Emxw9NPvXA0okDJZ23e4RRFU3g/viewform?embedded=true" width="640" height="947" frameBorder="0" marginheight="0" marginWidth="0"></iframe> */}
         <div className="glass -mt-5 p-1 text-gray-800 mb-24  flex justify-center items-center flex-wrap">
-          <p className='text-center'>© 2023 mts-seven.vercel.app — All Rights Reserved</p>
+          <p className='text-center'>© 2023 <Link href={'/'}>mts-seven.vercel.app</Link> — All Rights Reserved</p>
           <div className="ml-4 flex">
-            <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://twitter.com/mtsschool1998">
+          <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.google.com/maps/place/MOTHER+TERESSA+SR.SEC.SCHOOL/@26.0164776,76.6950282,18z/data=!4m6!3m5!1s0x3971c5a3a3b38d7f:0xd7f03a79de35d82c!8m2!3d26.016386!4d76.6956022!16s%2Fg%2F11c6_ykb86">
+              <Image alt='photo' src="/icons/map.png" width={30} height={30} />
+            </a>
+            <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://twitter.com/MTSSchool98">
               <Image alt='photo' src="/icons/twitter.png" width={30} height={30} />
             </a>
-            <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.facebook.com/profile.php?id=100085838620140">
+            <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.facebook.com/profile.php?id=100092324292806">
               <Image alt='photo' src="/icons/facebook.png" width={30} height={30} />
             </a>
             <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.instagram.com/mtsschool1998/">
               <Image alt='photo' src="/icons/instagram.png" width={30} height={30} />
-            </a>
-            <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.youtube.com/channel/UCMXVcZ5OvOuPoC0Ty8OzJcw/videos">
-              <Image alt='photo' src="/icons/youtube.png" width={30} height={30} />
             </a>
           </div>
         </div>

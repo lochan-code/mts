@@ -14,6 +14,386 @@ body {
   overflow-x: hidden;
   background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
 }
+
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+
+
+  h1 {
+    color: #88B04B;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+  }
+i {
+  color: #9ABC66;
+  font-size: 100px;
+  line-height: 200px;
+  margin-left:-15px;
+}
+.card {
+  background: white;
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.cielo {
+  width: 100%;
+  height: 70vh;
+  background-color: #ffe15d;
+}
+.mesa {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  background-color: #ffb100;
+}
+.clavo {
+  position: absolute;
+  top: 20px;
+  width: 15px;
+  height: 20px;
+  left: 52%;
+  background-color: #86a3b8;
+  border-radius: 50%;
+  border: 2px solid black;
+  transform: translateX(-50px) rotate(-15deg);
+}
+.sombra-clavo {
+  position: absolute;
+  top: 20px;
+  width: 15px;
+  height: 20px;
+  left: 52%;
+  background-color: #86a3b8;
+  border-radius: 50%;
+  transform: translateX(-50px) rotate(-15deg);
+}
+.cuerpo-clavo {
+  position: absolute;
+  top: 30px;
+  width: 10px;
+  height: 20px;
+  left: 52%;
+  background-color: #86a3b8;
+  border-right: 4px solid black;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  transform: translateX(-60px) rotate(45deg);
+}
+.cuerda-cuadro {
+  position: absolute;
+  top: 38px;
+  left: 52%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 80px solid #665a48;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  transform: translateX(-150px) rotate(-15deg);
+  animation: valanceocuerda 5s infinite;
+}
+@keyframes valanceocuerda{
+  0%{transform: translateX(-150px) rotate(-15deg);}
+  50% { transform: translateX(-170px) rotate(15deg);}
+  100%{transform: translateX(-150px) rotate(-15deg);}
+}
+
+.cuerda-cuadro-interno {
+  position: absolute;
+  top: 42px;
+  left: 52%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 80px solid #ffe15d;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  transform: translateX(-149px) rotate(-15deg);
+  animation: valanceocuerda 5s infinite;
+}
+.cuadro {
+  position: absolute;
+  top: 145px;
+  left: 50%;
+  width: 320px;
+  height: 200px;
+  background-color: #ecf2ff;
+  border: 18px solid #aa8b56;
+  border-radius: 20px;
+  outline: 4px solid #665a48;
+  color: red;
+  vertical-align: middle;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: valanceo 5s infinite ;
+}
+@keyframes valanceo{
+  0%{transform: rotate(-15deg) translateX(calc(50% - 330px)) translateY(-80px)}
+  50%{transform:  rotate(15deg) translateX(calc(50% - 460px)) translateY(35px)}
+  100%{transform: rotate(-15deg) translateX(calc(50% - 330px))translateY(-80px)}
+}
+.maceta-central {
+  position: relative;
+  top: 30px;
+  width: 120px;
+  height: 100px;
+  border: 4px solid #665a48;
+  background-color: #c27664;
+  border-bottom-left-radius: 15% 40%;
+  border-bottom-right-radius: 15% 40%;
+}
+.maceta-central-top {
+  position: relative;
+  top: -4px;
+  width: 140px;
+  height: 30px;
+  right: 15px;
+  border: 4px solid #665a48;
+  background-color: #c27664;
+  border-radius: 10px;
+}
+.maceta-izq{
+  left:90px ;
+}
+.cactus-cero {
+  position: relative;
+  top: -250px;
+  left: -60px;
+  width: 250px;
+  height: 250px;
+  background-color: #9cff2e;
+  border-radius: 50%;
+  border: 4px solid #367e18;
+}
+.interno-cactus {
+  position: absolute;
+  top: -4px;
+  left: 70px;
+  width: 100px;
+  height: 250px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 4px solid #367e18;
+}
+.pinchos-cactus-cero {
+  position: absolute;
+  top: -4px;
+  left: 70px;
+  width: 100px;
+  height: 250px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 4px solid #367e18;
+}
+.cactus-pincho {
+  position: absolute;
+  top: 125px;
+  left: -20px;
+  width: 20px;
+  height: 4px;
+  background-color: #367e18;
+}
+.ext1 {
+  top: 37px;
+  left: 7px;
+  transform: rotate(36deg);
+}
+.ext2 {
+  top: -9px;
+  left: 70px;
+  transform: rotate(72deg);
+}
+.ext3 {
+  top: -10px;
+  left: 155px;
+  transform: rotate(108deg);
+}
+.ext4 {
+  top: 45px;
+  left: 225px;
+  transform: rotate(144deg);
+}
+.ext5 {
+  top: 130px;
+  left: 250px;
+  transform: rotate(180deg);
+}
+.ext6 {
+  top: 220px;
+  left: 210px;
+  transform: rotate(216deg);
+}
+.ext7 {
+  top: 260px;
+  left: 140px;
+  transform: rotate(252deg);
+}
+.ext8 {
+  top: 250px;
+  left: 65px;
+  transform: rotate(288deg);
+}
+.inter9 {
+  top: 200px;
+  left: 0px;
+  transform: rotate(324deg);
+}
+.inter0 {
+  top: 125px;
+  left: -22px;
+  transform: rotate(360deg);
+}
+.inter1 {
+  width: 30px;
+  top: 55px;
+  left: 65px;
+  transform: rotate(3deg);
+}
+.inter2 {
+  width: 30px;
+  top: 30px;
+  left: 145px;
+  transform: rotate(-5deg);
+}
+.inter3 {
+  width: 30px;
+  top: 120px;
+  left: 55px;
+  transform: rotate(0deg);
+}
+.inter4 {
+  width: 30px;
+  top: 170px;
+  left: 60px;
+  transform: rotate(-5deg);
+}
+.inter5 {
+  width: 30px;
+  top: 220px;
+  left: 75px;
+  transform: rotate(-3deg);
+}
+.inter6 {
+  width: 30px;
+  top: 195px;
+  left: 152px;
+  transform: rotate(3deg);
+}
+.inter7 {
+  width: 30px;
+  top: 150px;
+  left: 160px;
+  transform: rotate(5deg);
+}
+.inter8 {
+  width: 30px;
+  top: 80px;
+  left: 160px;
+  transform: rotate(-5deg);
+}
+.cactus-izq {
+  position: relative;
+  top: -280px;
+  left: 15px;
+  width: 80px;
+  height: 235px;
+  background: #9cff2e;
+  border: 4px solid #367e18;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+
+}
+.cactus-part1 {
+  position: relative;
+  top: 90px;
+  left: -108px;
+  width: 100px;
+  height: 50px;
+  background-color: #9cff2e;
+  border: 4px solid #367e18;
+  border-bottom-left-radius: 30px;
+}
+.cactus-part2 {
+  position: relative;
+  top: -58px;
+  left: -108px;
+  width: 50px;
+  height: 90px;
+  background-color: #9cff2e;
+  border: 4px solid #367e18;
+  border-bottom: #9cff2e;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.pincho-base {
+  position: relative;
+  top: -90px;
+  left: -22px;
+  width: 20px;
+  height: 4px;
+  background-color: #367e18;
+}
+.base1 {
+  top: -162px;
+  left: 0px;
+  transform: rotate(45deg);
+}
+.base2 {
+  top: -160px;
+  left: 65px;
+  transform: rotate(130deg);
+}
+.base3 {
+  top: -85px;
+  left: 83px;
+}
+.base4 {
+  top: -20px;
+  left: 83px;
+}
+.base5 {
+  left: 83px;
+  top: 45px;
+}
+.base6 {
+  top: 15px;
+}
+.base7 {
+  top: 60px;
+  left: 40px;
+  transform: rotate(90deg);
+}
+.base8 {
+  top: 35px;
+  left: -20px;
+  transform: rotate(-25deg);
+}
+.base9 {
+  top: 70px;
+}
+.base10 {
+  top: -4px;
+  left: -14px;
+  transform: rotate(35deg);
+}
+.base11 {
+  top: 15px;
+  left: 54px;
+}
 .addmission_form{
   background: url(../public/hero.jpg) center no-repeat;
   background-size: cover;
@@ -64,16 +444,21 @@ body {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
-.icon-parent p {
-  display: none;
+.icon-parent ul {
+  /* display: none; */
+  bottom: -150px;
   cursor: pointer;
-}
-.icon-parent:hover p {
-  display: flex;
-  top: -45px;
-  justify-content: center;
+  transition: all 0.5s ease-in-out;
 }
 
+.icon-parent:hover ul {
+  display: flex;
+  justify-content: center;
+  bottom: 80px;
+}
+.icon-parent ul li:hover{
+  transform: scale(1.1);
+}
 .buttons {
   padding: 10px;
 }
@@ -504,110 +889,7 @@ section {
 .gradient-image {
   background-image: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
 }
-@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: "Fira Code", monospace;
-  background-color: #ecf0f1;
-  text-align: center;
-  margin: auto;
-  padding: 4em;
-}
-.container img {
-  width: 256px;
-  height: 225px;
-}
-.container h1 {
-  margin-top: 1rem;
-  font-size: 35px;
-  text-align: center;
-}
-.container h1 span {
-  font-size: 60px;
-}
-.container p {
-  margin-top: 1rem;
-}
-.container p.info {
-  margin-top: 4em;
-  font-size: 12px;
-}
-.container p.info a {
-  text-decoration: none;
-  color: #5454ce;
-}
-.submit_button {
-  text-align: center;
-  margin: 20px;
-}
-.submit_button button {
-  transform: rotate(-15deg) skewX(40deg);
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 10px 30px;
-  font-size: 25px;
-  color: #fff;
-  background: #616161;
-  letter-spacing: 5px;
-  transition: 0.5s;
-}
-.submit_button button:hover {
-  background: #f44336;
-}
-.submit_button button span {
-  position: absolute;
-  transition: 0.5s;
-}
-.submit_button button span:nth-child(1) {
-  top: 0;
-  left: -30px;
-  width: 30px;
-  height: 100%;
-  transform-origin: right;
-  transform: skewY(-45deg);
-  background: #4f4e4e;
-}
-.submit_button button:hover span:nth-child(1) {
-  background: #b43329;
-}
-.submit_button button span:nth-child(2) {
-  left: 0;
-  bottom: -30px;
-  height: 30px;
-  width: 100%;
-  transform-origin: top;
-  transform: skewX(-45deg);
-  background: #3c3a3a;
-}
-.submit_button button:hover span:nth-child(2) {
-  background: #892d26;
-}
-
-.submit_button button::before,
-button::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: 0.5s;
-}
-.submit_button button:hover::before {
-  top: -30px;
-  left: 30px;
-}
-.submit_button button:hover::after {
-  top: -60px;
-  left: 60px;
-}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
