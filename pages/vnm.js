@@ -1,8 +1,15 @@
 import React from 'react'
+import Head from 'next/head'
 
 const vnm = () => {
   return (
-    <>
+    <div>
+     <Head>
+        <title>Vision & Mission - MTS School</title>
+        <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school, vision, mission" />
+        <link rel="icon" href="/logo/favicon.png" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </Head>
     <div className='m-3 p-2 bg-white mb-32'>
       <h1 className='font-bold text-2xl text-gray-800 p-1 shadow-sm w-64'>VISION & MISSION</h1>
       <h2 className='font-bold'>Vision</h2>
@@ -19,7 +26,7 @@ const vnm = () => {
       <p>Lifelong learning which includes building morals, practice and habits which build the traits of a responsible citizen is the MTS’s motto. MTS School nurtures students to be independent and encourages cooperation, socializing and leadership such that they turn out to be better human beings tomorrow.As the leading school in terms of discipline, academics, extra curriculars, events and activities, all the programs are built to fit every student who walks through the doors of MTS School.</p>
     </div>
     .
-    </>
+    </div>
   )
 }
 

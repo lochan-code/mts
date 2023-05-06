@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Head>
         <title>MTS School | Mother Teressa Senior Secondary School Baharawanda Kalan</title>
-        <meta name="description" content="Mother Teressa Senior Secondary School Baharawanda kalan, mts, mts school, mts school baharawanda kalan, barawanda kalan,  mother  teressa school" />
+        <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school" />
         <link rel="icon" href="/logo/favicon.png" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
@@ -233,8 +233,8 @@ Send Message<svg
       <div className="py-8 px-8 m-10 mb-28 bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
   <div className="text-center space-y-2 sm:text-left">
     <div className="space-y-0.5">
-          <p className="text-slate-500 font-medium">This site is designed, developed, maintained and hosted by</p>
-      <p className="text-lg text-black font-semibold"><a href='mailto:lochangta5@gmail.com'>Lochan Jangid</a></p>
+          <h1 className="text-slate-500 font-medium">This site is designed, developed, maintained and hosted by</h1>
+      <h1 className="text-lg text-black font-semibold"><a href='mailto:lochangta5@gmail.com'>Lochan Jangid</a></h1>
     </div>
    
   </div>

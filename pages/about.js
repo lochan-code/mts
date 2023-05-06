@@ -16,7 +16,7 @@ const About = () => {
     <div>
         <Head>
         <title>About - MTS School</title>
-        <meta name="description" content="mtsschool.com we provide better education" />
+        <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school" />
         <link rel="icon" href="/logo/favicon.png" />
       </Head>
     <div className='glass p-3 m-5'>
