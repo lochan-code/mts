@@ -6,16 +6,9 @@ const Navbar = () => {
     <>
     <div className='fixed transition-all glass md:p-5 p-2 h-15 w-full space-x-2 flex items-center bottom-0 md:h-20'>
       <div>
-      <Image alt='MTS' src='/logo/black-transparent.png' width={100} height={40} />
+      <Link href={'/'}><Image alt='MTS' src='/logo/black-transparent.png' width={100} height={40} /></Link>
       </div>
       <div className="flex absolute right-2 space-x-2">
-      <Link href={'/'}>
-      <div className='transition-all icon-parent'>
-      <div className=" glass-blur md:p-3 p-1 flex justify-center items-center cursor-pointer">
-        <Image alt='photo'  src="/icons/home.png" width={30} height={30} />
-      </div>
-      </div>
-      </Link>
       <Link href={'/about'}>
         <div className='transition-all icon-parent'>
           <ul className='glass text-center flex flex-col text-black fixed right-40 text-xl p-3'>
@@ -31,7 +24,7 @@ const Navbar = () => {
       <Link href={'/addmission'}>
         <div className='transition-all icon-parent'>
         <ul className='glass text-center flex flex-col text-black fixed right-14 text-xl p-3'>
-        <Link href={'/process'}><li className='glass p-1 m-1'>ADMISSION PROCESS AT MTS</li></Link>
+        <Link href={'/process'}><li className='glass p-1 m-1'>ADMISSION PROCCESS AT MTS</li></Link>
         <Link href={'/addmission'}><li className='glass p-1 m-1'>ADMISSION ENQUIRY FORM</li></Link>
       </ul>
       <div className=" glass-blur md:p-3 p-1 flex justify-center items-center cursor-pointer">

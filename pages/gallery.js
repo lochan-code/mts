@@ -27,13 +27,13 @@ const Gallery = () => {
     },
   ]);
   const swiped = (direction, nameToDelete) => {
-    console.log("removing: " + nameToDelete);
+    // console.log("removing: " + nameToDelete);
   };
   const outofFrame = (name) => {
-    console.log(name + " left the  screen!");
+    // console.log(name + " left the  screen!");
   };
   return (
-    <>
+    <div>
       <Head>
         <title>
           Gallery - MTS School
@@ -58,7 +58,7 @@ const Gallery = () => {
                 <Image
                   alt="photo"
                   src={`${person.url}`}
-                  className="w-full"
+                  className="w-full hover:scale-150 transition-all"
                   width={500}
                   height={500}
                 />
@@ -67,7 +67,7 @@ const Gallery = () => {
           );
         })}
       </div>
-    </>
+      </div>
   );
 };
 

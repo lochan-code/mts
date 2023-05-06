@@ -20,7 +20,7 @@ const Addmission = () => {
  })
 }
   return (
-    <>
+    <div>
       <Head>
         <title>Addmission - MTS School</title>
         <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school" />
@@ -292,7 +292,7 @@ const Addmission = () => {
             </form>
             <div/>
             </div>
-            </>
+            </div>
   );
 };
 

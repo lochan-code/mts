@@ -50,10 +50,15 @@ export default function Home() {
         Admission Form
       </Link>
       </div>
+      <a href="https://files.appsgeyser.com/MTS%20School%20Mother%20Teressa%20Senior%20Secondary%20School%20Baharawanda%20kalan_17045525.apk?utm_source=email&utm_medium=email&utm_campaign=downloadApp" target="_blank" rel="noreferrer"><button class="bg-gray-300 m-1 hover:bg-gray-400 text-gray-800 font-bold py-2 poppins sm:hidden px-4 rounded inline-flex items-center">
+  <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+  <span>Download App</span>
+</button>
+  </a>
     </div>
-    <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+    <div className="lg:mt-0 lg:col-span-5 lg:flex m-3">
       <Image
-        src="/ceo.png" width={400} height={400}
+        src="/gallery7.jpg" width={500} height={400}
         alt="mts"
       />
     </div>
@@ -213,8 +218,8 @@ Send Message<svg
         </div>
 {/* <iframe className='-mb-36' src="https://docs.google.com/forms/d/e/1FAIpQLSf4yBDfigXCVt2krcd91Dz7Emxw9NPvXA0okDJZ23e4RRFU3g/viewform?embedded=true" width="640" height="947" frameBorder="0" marginheight="0" marginWidth="0"></iframe> */}
         <div className="glass -mt-5 p-1 text-gray-800 mb-24  flex justify-center items-center flex-wrap">
-          <p className='text-center'>© 2023 <Link href={'/'}>mts-seven.vercel.app</Link> — All Rights Reserved</p>
-          <div className="ml-4 flex">
+          <p className='text-center'>© 2023 <Link href={'/'}>mtsbk.vercel.app</Link> — All Rights Reserved</p>
+          <div className="ml-4 flex"> 
           <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.google.com/maps/place/MOTHER+TERESSA+SR.SEC.SCHOOL/@26.0164776,76.6950282,18z/data=!4m6!3m5!1s0x3971c5a3a3b38d7f:0xd7f03a79de35d82c!8m2!3d26.016386!4d76.6956022!16s%2Fg%2F11c6_ykb86">
               <Image alt='photo' src="/icons/map.png" width={30} height={30} />
             </a>
