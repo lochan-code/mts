@@ -10,6 +10,7 @@ export default function Home() {
         <title>MTS School | Mother Teressa Senior Secondary School Baharawanda Kalan</title>
         <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school" />
         <link rel="icon" href="/logo/favicon.png" />
+        <meta name="google-site-verification" content="Qs4XobxT757h2HYne5BDi7Cn-FopBwFHyDe-wZEPiBQ" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
       <div>

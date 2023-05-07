@@ -6,6 +6,7 @@ const terms_and_conditions = () => {
     <div>
       <Head>
         <title>Terms and Conditions for MTS School</title>
+        <link rel="icon" href="/logo/favicon.png" />
       </Head>{" "}
       <div className="tam">
         <div className="page mb-32">

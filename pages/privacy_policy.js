@@ -1,7 +1,13 @@
+import Head from 'next/head'
 import React from 'react'
 
 const privacy_policy = () => {
   return (
+    <>
+     <Head>
+        <title>Privacy Policy for MTS School</title>
+        <link rel="icon" href="/logo/favicon.png" />
+      </Head>
     <div className='tam'>
       <div className="page mb-32">
   <div className="header">
@@ -530,6 +536,7 @@ const privacy_policy = () => {
   </div>
   .
 </div>
+</>
   )
 }
 
