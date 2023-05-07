@@ -26,12 +26,6 @@ const Gallery = () => {
       url: "/gallery7.jpg",
     },
   ]);
-  const swiped = (direction, nameToDelete) => {
-    // console.log("removing: " + nameToDelete);
-  };
-  const outofFrame = (name) => {
-    // console.log(name + " left the  screen!");
-  };
   return (
     <div>
       <Head>

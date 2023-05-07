@@ -4,7 +4,6 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <>
-    <div className=''>
       <div className="fixed transition-all glass md:p-5 p-2 h-15 w-full items-center bottom-0 md:h-20 flex right-2 space-x-2">
       <div>
       <Link href={'/'}><Image alt='MTS' src='/logo/black-transparent.png' width={100} height={40} /></Link>
@@ -53,7 +52,6 @@ const Navbar = () => {
      <a className=' hover:scale-75 transition-all hover:rotate-12' href="mailto:contactmtsschool@gmail.com">
       <Image alt='photo' src={"/icons/mail.png"}  width={40} height={40} />
      </a>
-    </div>
     </div>
     </>
   )

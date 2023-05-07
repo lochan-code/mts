@@ -8,13 +8,13 @@ const terms_and_conditions = () => {
         <title>Terms and Conditions for MTS School</title>
       </Head>{" "}
       <div className="tam">
-        <div class="page mb-32">
-          <div class="header">
-              <p class="title">Terms and Conditions for MTS School</p>
+        <div className="page mb-32">
+          <div className="header">
+              <p className="title">Terms and Conditions for MTS School</p>
           </div>
-          <div class="translations-content-container">
+          <div className="translations-content-container">
               <div
-                class="tab-content translations-content-item en visible"
+                className="tab-content translations-content-item en visible"
                 id="en"
               >
                 <h1 className="text-black">Terms and Conditions</h1>

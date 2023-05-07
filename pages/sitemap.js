@@ -18,7 +18,7 @@ const sitemap = () => {
               <span className="w-full">Home</span>
               <svg
                 aria-hidden="true"
-                class="w-6 h-6 ml-3"
+                className="w-6 h-6 ml-3"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ const sitemap = () => {
               <span className="w-full">/ about</span>
               <svg
                 aria-hidden="true"
-                class="w-6 h-6 ml-3"
+                className="w-6 h-6 ml-3"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ const sitemap = () => {
               <span className="w-full">/ admission</span>
               <svg
                 aria-hidden="true"
-                class="w-6 h-6 ml-3"
+                className="w-6 h-6 ml-3"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg"

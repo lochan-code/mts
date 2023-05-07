@@ -3,7 +3,8 @@ import Navbar from "../components/navbar";
 import "../styles/globals.css";
 import { useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
-
+import { ErrorBoundary } from "react-error-boundary";
+import Script from 'next/script';
 import Top from "../components/Top";
 
 function MyApp({ Component, pageProps }) {
@@ -25,8 +26,9 @@ function MyApp({ Component, pageProps }) {
           name="google-site-verification"
           content="Qs4XobxT757h2HYne5BDi7Cn-FopBwFHyDe-wZEPiBQ"
         />
+      </Head>
         {/* <!-- Chat widget --> */}
-        <script
+        <Script id="my-script"
           dangerouslySetInnerHTML={{
             __html: `
               (function (w, d, s, u) {
@@ -55,11 +57,11 @@ function MyApp({ Component, pageProps }) {
           }}
         />
         {/* <!-- /Chat widget --> */}
-      </Head>
-
+      <ErrorBoundary fallback={<p>Something went wrong</p>}>
       <Top />
       <Component {...pageProps} />
       <Navbar />
+      </ErrorBoundary>
     </>
   );
 }

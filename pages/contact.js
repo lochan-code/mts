@@ -9,7 +9,7 @@ const contact = () => {
           <div className="lg:w-2/3 md:w-1/2 h-[80vh] bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1437.9436408202141!2d76.6950282!3d26.0164776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3971c5a3a3b38d7f%3A0xd7f03a79de35d82c!2sMOTHER%20TERESSA%20SENIOR%20SECONDARY%20SCHOOL!5e1!3m2!1sen!2sin!4v1683376913211!5m2!1sen!2sin"
-              class="absolute inset-0 w-full h-[80vh]"
+              className="absolute inset-0 w-full h-[80vh]"
               title="map"
               style={{ border: 0 }}
               loading="lazy"
