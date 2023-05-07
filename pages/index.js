@@ -217,7 +217,7 @@ Send Message<svg
           </form>
         </div>
 {/* <iframe className='-mb-36' src="https://docs.google.com/forms/d/e/1FAIpQLSf4yBDfigXCVt2krcd91Dz7Emxw9NPvXA0okDJZ23e4RRFU3g/viewform?embedded=true" width="640" height="947" frameBorder="0" marginheight="0" marginWidth="0"></iframe> */}
-        <div className="glass -mt-5 p-1 text-gray-800 mb-24  flex justify-center items-center flex-wrap">
+        <div className="glass -mt-5 p-1 text-gray-800  flex justify-center items-center flex-wrap">
           <p className='text-center'>© 2023 <Link href={'/'}>mtsbk.vercel.app</Link> — All Rights Reserved</p>
           <div className="ml-4 flex"> 
           <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.google.com/maps/place/MOTHER+TERESSA+SR.SEC.SCHOOL/@26.0164776,76.6950282,18z/data=!4m6!3m5!1s0x3971c5a3a3b38d7f:0xd7f03a79de35d82c!8m2!3d26.016386!4d76.6956022!16s%2Fg%2F11c6_ykb86">
@@ -235,12 +235,25 @@ Send Message<svg
           </div>
         </div>
       </div>
-      <div className="py-8 px-8 m-10 mb-28 bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+      <div className="py-8 px-8 mb-28 m-10 bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
   <div className="text-center space-y-2 sm:text-left">
     <div className="space-y-0.5">
           <h1 className="text-slate-500 font-medium">This site is designed, developed, maintained and hosted by</h1>
       <h1 className="text-lg text-black font-semibold"><a href='mailto:lochangta5@gmail.com'>Lochan Jangid</a></h1>
     </div>
+    <ul className="flex flex-wrap space-x-2">
+          <li>
+            <Link href={"/terms_and_conditions"} aria-current="page">
+              Terms and Conditions
+            </Link>
+          </li>
+          <li>|</li>
+          <li>
+            <Link href={"/privacy_policy"} aria-current="page">
+              Privacy Policy
+            </Link>
+          </li>
+    </ul>
    
   </div>
 </div>

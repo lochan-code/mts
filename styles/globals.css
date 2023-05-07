@@ -7,7 +7,7 @@
 html {
   scroll-behavior: smooth;
 }
-*{
+* {
   font-family: "Ubuntu", sans-serif;
 }
 body {
@@ -20,43 +20,41 @@ body {
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
 
-
-  h1 {
-    color: #88B04B;
-    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-    font-weight: 900;
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
-  p {
-    color: #404F5E;
-    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-    font-size:20px;
-    margin: 0;
-  }
+h1 {
+  color: #88b04b;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+p {
+  color: #404f5e;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
 i {
-  color: #9ABC66;
+  color: #9abc66;
   font-size: 100px;
   line-height: 200px;
-  margin-left:-15px;
+  margin-left: -15px;
 }
 .card {
   background: white;
   padding: 60px;
   border-radius: 4px;
-  box-shadow: 0 2px 3px #C8D0D8;
+  box-shadow: 0 2px 3px #c8d0d8;
   display: inline-block;
   margin: 0 auto;
 }
 
-
-.addmission_form{
+.addmission_form {
   background: url(../public/hero.jpg) center no-repeat;
   background-size: cover;
-  width: 100vw; 
+  width: 100vw;
   height: 100%;
 }
-.hero{
+.hero {
   background: url(../public/hero.jpg) center no-repeat;
   background-size: cover;
   width: 100vw;
@@ -112,7 +110,7 @@ i {
   justify-content: center;
   bottom: 80px;
 }
-.icon-parent ul li:hover{
+.icon-parent ul li:hover {
   transform: scale(1.1);
 }
 .buttons {
@@ -368,19 +366,19 @@ form .button-area {
   }
 }
 @media only screen and (max-width: 600px) {
-	.bus-service{
-		background: url('./../public/bus\ -\ Copy.jpg') center;
-		height: 100px;
-		background-size: cover;
-		padding: 10px;
-	}
+  .bus-service {
+    background: url("./../public/bus\ -\ Copy.jpg") center;
+    height: 100px;
+    background-size: cover;
+    padding: 10px;
+  }
   .bus-service .image-of-bus {
     visibility: hidden;
   }
   .bus-service h1 {
     position: absolute;
-	color: white;
-	font-size: 1em;
+    color: white;
+    font-size: 1em;
   }
   .wrapper header {
     text-align: center;
@@ -401,7 +399,6 @@ form .button-area {
     resize: none;
   }
   form .button-area {
-
     margin-top: 20px;
     flex-direction: column;
   }
@@ -545,6 +542,149 @@ section {
 .gradient-image {
   background-image: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.tam {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.tam h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.tam h1,
+h2 {
+  font-weight: 700;
+}
+
+.tam h2 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.tam h3 {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.tam h3,
+h4 {
+  font-weight: 700;
+}
+
+.tam h4 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.tam h5 {
+  font-size: 16px;
+}
+
+.tam h5,
+h6 {
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.tam h6 {
+  font-size: cacl(16px);
+}
+
+.tam a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.tam a:hover,
+a[rel~="nofollow"] {
+  text-decoration: underline;
+}
+
+.tam a[rel~="nofollow"] {
+  color: #0452a5;
+}
+
+.tam a[rel~="nofollow"]:hover {
+  text-decoration: none;
+}
+
+.tam .visible {
+  display: block;
+}
+
+.tam .hidden {
+  display: none;
+}
+
+.tam .page {
+  width: 100%;
+}
+
+.tam .container {
+  position: relative;
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.tam .header {
+  color: #000;
+  padding: 16px 0;
+}
+
+.tam .header .title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.tam .translations-list-container {
+  color: #000;
+  padding-bottom: 8px;
+  margin: 0 0 16px;
+}
+
+.tam .translations-list-container .translations-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tam .translations-list-container .translations-list .translations-list-item {
+  display: inline-block;
+  padding: 0;
+  margin: 0 8px 8px 0;
+  color: #fff;
+}
+
+.tam .translations-list-container .translations-list .translations-list-item a {
+  display: inline-block;
+  padding: 4px 8px;
+}
+
+.tam
+  .translations-list-container
+  .translations-list
+  .translations-list-item
+  a.active {
+  color: #fff;
+  background: #334055;
+}
+
+.tam .translations-content-container {
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+}
