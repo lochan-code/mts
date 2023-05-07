@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
 import "../styles/globals.css";
-
+import { Analytics } from '@vercel/analytics/react';
 
 import React from "react";
 import Top from "../components/Top";
