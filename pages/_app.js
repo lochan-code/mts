@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <>
+    <ErrorBoundary>
       <Head>
         <title>MTS School | Mother Teressa Sr. Sec. School Baharawanda Kalan</title>
         <meta
@@ -28,12 +28,8 @@ function MyApp({ Component, pageProps }) {
           content="Qs4XobxT757h2HYne5BDi7Cn-FopBwFHyDe-wZEPiBQ"
         />
       </Head>
-
-      <Top />
-      <Component {...pageProps} />
-      <Navbar  />
-              {/* <!-- Chat widget --> */}
-              <Script id="my-script"
+        {/* <!-- Chat widget --> */}
+        <Script id="my-script"
           dangerouslySetInnerHTML={{
             __html: `
               (function (w, d, s, u) {
@@ -62,7 +58,10 @@ function MyApp({ Component, pageProps }) {
           }}
         />
         {/* <!-- /Chat widget --> */}
-    </>
+      <Top />
+      <Component {...pageProps} />
+      <Navbar  />
+    </ErrorBoundary>
   );
 }
 
