@@ -17,7 +17,7 @@ export default function Home() {
         <section className="bg-white dark:bg-gray-900">
   <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
     <div className="mr-auto place-self-center lg:col-span-7">
-      <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+      <h1 className="max-w-2xl mb-4 text-4xl text-white font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
       MTS School
       </h1>
       <p className="max-w-2xl mb-6 font-light  lg:mb-8 md:text-lg lg:text-xl text-gray-200">
@@ -150,7 +150,7 @@ export default function Home() {
       <div className="linear-gradient-card-vala p-5">
         <div className="wrapper flex items-center justify-center p-1">
           <Image alt='photo' src="/ceo.png"  className='rounded-full' width={100} height={100} />
-          <h1 className='ml-5 ubuntu text-xl font-semibold'>Education is important for become a successfull person</h1>
+          <h1 className='ml-5 ubuntu text-xl text-gray-500 font-semibold'>Education is important for become a successfull person</h1>
         </div>
       </div>
       {/* <div className="flex justify-center linear-gradient-card-vala items-center p-10">
@@ -170,7 +170,7 @@ export default function Home() {
       <div className="flex  justify-center linear-gradient-card-vala items-center p-5">
         <div className="wrapper bus-service w-full h-full flex items-center ">
           <Image alt='photo' src="/bus.jpg" className='image-of-bus' width={1000} height={700} />
-          <h1 className='ml-10 ubuntu text-xl font-semibold'>Here bus sevice available. many villages in bus pickup and drop students. prepared driver Bus Driver in our bus service. These are villages where School Bus Service Available - <ul className='list-disc font-light'><li>Piplet</li><li>Kudana</li><li>Kosra</li></ul></h1>
+          <h1 className='ml-10 ubuntu text-xl font-semibold text-gray-500'>Here bus sevice available. many villages in bus pickup and drop students. prepared driver Bus Driver in our bus service. These are villages where School Bus Service Available - <ul className='list-disc font-light'><li>Piplet</li><li>Kudana</li><li>Kosra</li></ul></h1>
         </div>
       </div>
       <div className="flex flex-col justify-center linear-gradient-contact-vala items-center p-5">
