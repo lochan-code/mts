@@ -693,4 +693,8 @@ a[rel~="nofollow"] {
 }
 iframe#gb-waw-iframe{
   width: 60px !important;
+  overflow: visible !important;
+}
+iframe#gb-waw-iframe:hover, iframe#gb-waw-iframe:active{
+  width: 2046px !important;
 }
