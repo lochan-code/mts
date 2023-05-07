@@ -4,11 +4,11 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <>
-    <div className='fixed transition-all glass md:p-5 p-2 h-15 w-full space-x-2 flex items-center bottom-0 md:h-20'>
+    <div className=''>
+      <div className="fixed transition-all glass md:p-5 p-2 h-15 w-full items-center bottom-0 md:h-20 flex right-2 space-x-2">
       <div>
       <Link href={'/'}><Image alt='MTS' src='/logo/black-transparent.png' width={100} height={40} /></Link>
       </div>
-      <div className="flex absolute right-2 space-x-2">
       <Link href={'/about'}>
         <div className='transition-all icon-parent'>
           <ul className='glass text-center flex flex-col text-black fixed right-40 text-xl p-3'>
