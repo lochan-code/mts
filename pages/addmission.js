@@ -1,24 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Image from "next/image";
-
-
 
 const Addmission = () => {
-  if (typeof window !== "undefined") {
-  window.addEventListener("DOMContentLoaded", (event) => {
-  const scriptURL = ''
-  const form = document.forms['formName']
-  
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => alert("Thank you! your form is submitted successfully." ))
-    .then(() => {  window.location.reload(); })
-    .catch(error => console.error('Error!', error.message))
-  })
- })
-}
   return (
     <div>
       <Head>

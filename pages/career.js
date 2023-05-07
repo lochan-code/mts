@@ -3,15 +3,15 @@ import React, { useRef, useEffect } from "react";
 import VanillaTilt from "vanilla-tilt";
 
 const Career = () => {
-  const useTiltRef = useRef(null);
-  useEffect(() => {
-    if (useTiltRef.current) {
-      VanillaTilt.init(useTiltRef.current, {
-        max: 25,
-        speed: 400,
-      });
-    }
-  }, []);
+  // const useTiltRef = useRef(null);
+  // useEffect(() => {
+  //   if (useTiltRef.current) {
+  //     VanillaTilt.init(useTiltRef.current, {
+  //       max: 25,
+  //       speed: 400,
+  //     });
+  //   }
+  // }, []);
   return (
     <div>
       <Head>
@@ -27,9 +27,7 @@ const Career = () => {
       </Head>
       <div>
         <div
-          className="flex flex-col justify-center items-center h-[80vh]"
-          ref={useTiltRef}
-        >
+          className="flex flex-col items-center" >
           <div className="bg-[#0795FF] p-5 py-20 w-[80vw] m-2 text-center">
             <h1 className="text-2xl bruno text-center text-white mb-2">
               Join us and work with{" "}
@@ -47,7 +45,7 @@ const Career = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center h-[100vh] bg-gray-900">
+        <div className="flex flex-col items-center bg-gray-900">
           <div className="bg-[#0795FF] p-5 py-20 w-[80vw] m-2">
             <h1 className="font-bold px-4 py-2 text-3xl text-white bg-[#32A7FF] hover:bg-[#32A7FF] shadow-lg">
               You’re in good company!
@@ -127,7 +125,7 @@ const Career = () => {
             name="gender"
             className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
           >
-            <option selected=""> Select Gender</option>
+            <option value={0}> Select Gender</option>
             <option value="male">👨‍🏫 Male</option>
             <option value="female">👩‍🏫 Female</option>
           </select>
@@ -158,7 +156,7 @@ const Career = () => {
             name="level_of_education"
             className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
           >
-            <option selected="">- Select -</option>
+            <option value={0}>- Select -</option>
             <option value="ba"> B.A. </option>
             <option value="bcom"> B.Com. </option>
             <option value="bsc"> B.Sc. </option>
@@ -182,15 +180,15 @@ const Career = () => {
             name="you_can_teach"
             className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
           >
-            <option selected="">- Select -</option>
-            <option selected="primary only">Primary Only</option>
-            <option selected="upper primary only">upper Primary Only</option>
-            <option selected="primary and upp">Primary and Upper Primary</option>
-            <option selected="secondary only">Secondary Only</option>
-            <option selected="high secondary only">High Secondary Only</option>
-            <option selected="secondary and high secondary">Secondary and High Secondary </option>
-            <option selected="pre-primary only">Pre-Primary Only</option>
-            <option selected="pre-primary and primary">Pre-Primary and Primary</option>
+            <option value={0}>- Select -</option>
+            <option value="primary only">Primary Only</option>
+            <option value="upper primary only">upper Primary Only</option>
+            <option value="primary and upp">Primary and Upper Primary</option>
+            <option value="secondary only">Secondary Only</option>
+            <option value="high secondary only">High Secondary Only</option>
+            <option value="secondary and high secondary">Secondary and High Secondary </option>
+            <option value="pre-primary only">Pre-Primary Only</option>
+            <option value="pre-primary and primary">Pre-Primary and Primary</option>
           </select>
         </div>
         <div>
@@ -203,7 +201,7 @@ const Career = () => {
             name="employment_type"
             className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
           >
-            <option selected="">- Select -</option>
+            <option value={0}>- Select -</option>
             <option value="full time">Full Time</option>
             <option value="part time">Part Time</option>
           </select>
@@ -218,7 +216,7 @@ const Career = () => {
             name="fresher/experienced"
             className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
           >
-            <option selected="">- Select -</option>
+            <option value={0}>- Select -</option>
             <option value="fresher">Fresher</option>
             <option value="experienced">Experienced</option>
           </select>
