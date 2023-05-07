@@ -1,17 +1,7 @@
 import Head from "next/head";
-import React, { useRef, useEffect } from "react";
-import VanillaTilt from "vanilla-tilt";
+import React from "react";
 
 const Career = () => {
-  // const useTiltRef = useRef(null);
-  // useEffect(() => {
-  //   if (useTiltRef.current) {
-  //     VanillaTilt.init(useTiltRef.current, {
-  //       max: 25,
-  //       speed: 400,
-  //     });
-  //   }
-  // }, []);
   return (
     <div>
       <Head>
