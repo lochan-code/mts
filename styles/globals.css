@@ -691,3 +691,6 @@ a[rel~="nofollow"] {
   padding-top: 8px;
   border-top: 1px solid #eee;
 }
+iframe#gb-waw-iframe{
+  width: 60px !important;
+}

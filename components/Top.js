@@ -18,7 +18,7 @@ const Top = () => {
         </div>
       </div>
       <div className="lg:absolute lg:right-2">
-        <ul className="flex flex-wrap space-x-2">
+        <ul className="flex flex-wrap justify-end space-x-2">
           <li>
             <Link href={"/career"} aria-current="page">
               CAREER
