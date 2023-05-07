@@ -98,6 +98,9 @@ i {
 .poppins {
   font-family: "Poppins", sans-serif;
 }
+.icon-parent{
+  z-index: 99999999999999999999;
+}
 .icon-parent ul {
   /* display: none; */
   bottom: -250px;

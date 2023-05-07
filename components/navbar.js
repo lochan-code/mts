@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <Link href={'/about'}>
         <div className='transition-all icon-parent'>
-          <ul className='glass text-center flex flex-col text-black fixed right-40 text-xl p-3'>
+          <ul className='glass text-center flex flex-col text-black fixed left-14 text-xl p-3'>
         <Link href={'/vnm'}><li className='glass p-1 m-1'>VISION AND MISSION</li></Link>
         <Link href={'/story'}><li className='glass p-1 m-1'>OUR STORY</li></Link>
         {/* <Link href={'/'}><li className='glass p-1 m-1'>ACHIEVEMENTS</li></Link> */}
@@ -22,7 +22,7 @@ const Navbar = () => {
       </Link>
       <Link href={'/addmission'}>
         <div className='transition-all icon-parent'>
-        <ul className='glass text-center flex flex-col text-black fixed right-14 text-xl p-3'>
+        <ul className='glass text-center flex flex-col text-black fixed left-14 text-xl p-3'>
         <Link href={'/process'}><li className='glass p-1 m-1'>ADMISSION PROCCESS AT MTS</li></Link>
         <Link href={'/addmission'}><li className='glass p-1 m-1'>ADMISSION ENQUIRY FORM</li></Link>
       </ul>
