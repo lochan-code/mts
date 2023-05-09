@@ -28,7 +28,7 @@ const Addmission = () => {
           <span className="title-font text-white font-medium">Note: All the entries must be in CAPITAL LETTERS.</span>
         </span>
         <div className="flex flex-wrap items-center">
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
                 <div className="">
                   <label className="label" htmlFor="name">
                     Student Name *
@@ -153,7 +153,7 @@ const Addmission = () => {
                   </select>{" "}
                 </div>
                 </div>
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
                 <div className="">
                   <label className="label" htmlFor="name">
                     Father Name *
@@ -182,7 +182,7 @@ const Addmission = () => {
                   />{" "}
                 </div>
               </div>
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              <div className="flex md:m-2 m-1 justify-center items-center ">
                 <div className="">
                   <label className="label" htmlFor="dob">
                     Father Mobile No *<br />
@@ -207,7 +207,7 @@ const Addmission = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
                 <div className="">
                   <label className="label" htmlFor="name">
                     Mother Name
