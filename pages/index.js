@@ -8,10 +8,11 @@ export default function Home() {
     <div>
       <Head>
         <title>MTS School | Mother Teressa Senior Secondary School Baharawanda Kalan</title>
-        <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school" />
+        <meta name="description" content="mts school is committed to providing a high-quality education for all students, regardless of their background. We offer a variety of programs and services to meet the needs of our diverse student body. Our goal is to help every student reach their full potential." />
         <link rel="icon" href="/logo/favicon.png" />
         <meta name="google-site-verification" content="Qs4XobxT757h2HYne5BDi7Cn-FopBwFHyDe-wZEPiBQ" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="apple-touch-icon" href="/logo/favicon.png" />
       </Head>
       <div>
         <div className="banner">
@@ -36,7 +37,7 @@ export default function Home() {
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            fillRule="evenodd"
+ n            fillRule="evenodd"
             d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
             clipRule="evenodd"
           />
@@ -60,7 +61,7 @@ export default function Home() {
     <div className="lg:mt-0 lg:col-span-5 lg:flex m-3">
       <Image
         src="/gallery7.jpg" width={500} height={400} priority={true}
-        alt="mts"
+        alt="mts school"
       />
     </div>
   </div>
@@ -69,11 +70,11 @@ export default function Home() {
         </div>
         <div className="flex flex-wrap justify-center m-3 space-x-3">
           <div className="p-3 flex flex-col glass-blur text-center">
-            <Image alt='photo' src="/icons/stundent.png" width={100} height={100} />
+            <Image alt='student' src="/icons/stundent.png" width={100} height={100} />
             <p className='threed glass p-1 text-3xl'>500+</p>
           </div>
           <div className="p-3 flex flex-col glass-blur text-center">
-            <Image alt='photo' src="/icons/teacher.png" width={100} height={100} />
+            <Image alt='teacher' src="/icons/teacher.png" width={100} height={100} />
             <p className='threed glass p-1 text-3xl'>15+</p>
           </div>
         </div>
@@ -82,76 +83,76 @@ export default function Home() {
         <h1 className='text-white text-center text-4xl w-full varela'>Facilities</h1>
         <div className="glass-blur flex flex-wrap p-2 justify-center items-center">
           <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Medium: Hindi</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Medium: Hindi</p>
           </div>
           <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Medium: English</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Medium: English</p>
           </div>   <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>From 1 to 12</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>From 1 to 12</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Total Teachers: 15+</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Total Teachers: 15+</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Male Teachers: 10+</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Male Teachers: 10+</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'> Female Teacher: 2+</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'> Female Teacher: 2+</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Electricity</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Electricity</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Library</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Library</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Playground</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Playground</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Drinking Water</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Drinking Water</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center w=full">
-            <Image alt='photo' src="/icons/check.png" width={40} height={40} />
-            <h1 className='ml-1 bungee text-white'>Contact Teacher</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Contact Teacher</p>
           </div>  <div className="glass m-3 bg-slate-900 flex justify-center p-3 items-center">
-            <Image alt='photo' src="/icons/check.png" className='max-[768px]:hidden flex' width={40} height={40} />
-            <h1 className='ml-1 text-sm bungee text-white'>Students Motivated</h1>
+            <Image alt='facilities mts school' src="/icons/check.png" className='max-[768px]:hidden flex' width={40} height={40} />
+            <p className='ml-1 bungee text-sm text-white'>Students Motivated</p>
           </div>
         </div>
       </div>
-      {/* <div className="container mt-2">
+      <div className="container left-1/2 -translate-x-1/2">
             <h1 className='text-white text-4xl varela'>Arts</h1>
             <div className="flex flex-wrap justify-center text-center">
-              <div className="card z-50">
+              <div className="card">
                 <div className="content">
                   <h2>01</h2>
                   <h3>HISTORY</h3>
-                  <a href="https://en.wikipedia.org/wiki/History" target="_blank">Read More</a>
+                  <a href="https://en.wikipedia.org/wiki/History" target="_blank" rel="noreferrer">Read More</a>
                 </div>
               </div>
               <div className="card">
                 <div className="content">
                   <h2>02</h2>
                   <h3>HINDI LITERATURE</h3>
-                  <a href="https://en.wikipedia.org/wiki/Hindi_literature" target="_blank">Read More</a>
+                  <a href="https://en.wikipedia.org/wiki/Hindi_literature" target="_blank" rel="noreferrer">Read More</a>
                 </div>
               </div>
               <div className="card">
                 <div className="content">
                   <h2>03</h2>
                   <h3>GEOGRAPHY</h3>
-                  <a href="https://en.wikipedia.org/wiki/Geography" target="_blank">Read More</a>
+                  <a href="https://en.wikipedia.org/wiki/Geography" target="_blank" rel="noreferrer">Read More</a>
                 </div>
               </div>
             </div>
 
-          </div> */}
+          </div>
       <div className="linear-gradient-card-vala p-5">
         <div className="wrapper flex items-center justify-center p-1">
           <Image alt='photo' src="/ceo.png"  className='rounded-full' width={100} height={100} />
-          <h1 className='ml-5 ubuntu text-xl text-gray-500 font-semibold'>Education is important for become a successfull person</h1>
+          <p className='ml-5 ubuntu text-xl text-gray-500 font-semibold'>Education is important for become a successfull person</p>
         </div>
       </div>
       {/* <div className="flex justify-center linear-gradient-card-vala items-center p-10">
@@ -222,16 +223,16 @@ Send Message<svg
           <p className='text-center'>© 2023 <Link href={'/'}>mtsbk.vercel.app</Link> — All Rights Reserved</p>
           <div className="ml-4 flex"> 
           <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.google.com/maps/place/MOTHER+TERESSA+SR.SEC.SCHOOL/@26.0164776,76.6950282,18z/data=!4m6!3m5!1s0x3971c5a3a3b38d7f:0xd7f03a79de35d82c!8m2!3d26.016386!4d76.6956022!16s%2Fg%2F11c6_ykb86">
-              <Image alt='photo' src="/icons/map.png" width={30} height={30} />
+              <Image alt='map' src="/icons/map.png" width={30} height={30} />
             </a>
             <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://twitter.com/MTSSchool98">
-              <Image alt='photo' src="/icons/twitter.png" width={30} height={30} />
+              <Image alt='twitter' src="/icons/twitter.png" width={30} height={30} />
             </a>
             <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.facebook.com/profile.php?id=100092324292806">
-              <Image alt='photo' src="/icons/facebook.png" width={30} height={30} />
+              <Image alt='facebook' src="/icons/facebook.png" width={30} height={30} />
             </a>
             <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.instagram.com/mtsschool1998/">
-              <Image alt='photo' src="/icons/instagram.png" width={30} height={30} />
+              <Image alt='instagram' src="/icons/instagram.png" width={30} height={30} />
             </a>
           </div>
         </div>
