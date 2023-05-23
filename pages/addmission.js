@@ -14,7 +14,7 @@ const Addmission = () => {
                 <h4>MTS SCHOOL Registration Form</h4>
       </div>
             <form
-              action="https://script.google.com/macros/s/AKfycbyut6ioKCNm0-qPxplDIex2GAyJfRdka54MIW9AsUEwftC6rQ1bqdFO-g8J3f4YrMn2/exec"
+              action="https://script.google.com/macros/s/AKfycbwbPWYUMHruAVto9vPYVLFNKLvKMZ-md3tROzyRkYEisnmRinCBGQ6tqRCCXLzmS5Nr/exec"
               method="POST"
               className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto w-[95vw] mt-10 md:mt-0 cursor-default"
             >
@@ -38,23 +38,43 @@ const Addmission = () => {
                   <div className="input-group">
                     <input
                     className='bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2  transition-colors duration-200 ease-in-out m-1'
-                      name="[st][first_name]"
-                      placeholder="First Name"
+                      name="st"
                       required="required"
                       type="text"
-                      id="EnquiryFirstName"
                     />
                   </div>
+                </div>
+              </div>
+              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
+                <div className="">
+                  <label className="label" htmlFor="name">
+                    Father Name *
+                  </label>
+                </div>
+                <div className="">
+                  <div className="input-group">
+                    <input
+                    className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
+                      name="father"
+                      required="required"
+                      type="text"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
+                <div className="">
+                  <label className="label" htmlFor="name">
+                    Mother Name
+                  </label>
                 </div>
                 <div className="">
                   <input
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
-                    name="[st][last_name]"
-                    required="required"
-                    placeholder="Last Name"
+                    name="mother"
+                     required="required"
                     type="text"
-                    id="EnquiryLastName"
-                  />{" "}
+                  />
                 </div>
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
@@ -68,7 +88,6 @@ const Addmission = () => {
                     <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                       name="class"
                       required="required"
-                      id="classname"
                     >
                       <option value="">Select Class</option>
                       <option value="Pre-Nursery">Pre-Nursery</option>
@@ -107,7 +126,6 @@ const Addmission = () => {
                   <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="medium"
                     required="required"
-                    id="EnquiryMedium"
                   >
                     <option value="">Select Medium</option>
                     <option value="English">English</option>
@@ -145,7 +163,6 @@ const Addmission = () => {
                   <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="gender"
                     required="required"
-                    id="EnquiryGender"
                   >
                     <option value="">Select Gender</option>
                     <option value="Male">Male</option>
@@ -153,35 +170,6 @@ const Addmission = () => {
                   </select>{" "}
                 </div>
                 </div>
-              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
-                <div className="">
-                  <label className="label" htmlFor="name">
-                    Father Name *
-                  </label>
-                </div>
-                <div className="">
-                  <div className="input-group">
-                    <input
-                    className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
-                      name="father_first_name"
-                      placeholder="First Name"
-                      required="required"
-                      type="text"
-                      id="EnquiryFatherFirstName"
-                    />
-                  </div>
-                </div>
-                <div className="">
-                  <input
-                  className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
-                    name="father_last_name"
-                    placeholder="Last Name"
-                    type="text"
-                    required="required"
-                    id="EnquiryFatherLastName"
-                  />{" "}
-                </div>
-              </div>
               <div className="flex md:m-2 m-1 justify-center items-center ">
                 <div className="">
                   <label className="label" htmlFor="dob">
@@ -207,34 +195,6 @@ const Addmission = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
-                <div className="">
-                  <label className="label" htmlFor="name">
-                    Mother Name
-                  </label>
-                </div>
-                <div className="">
-                  <input
-                  className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
-                    name="mother_first_name"
-                    placeholder="First Name"
-                     required="required"
-                    type="text"
-                    id="EnquiryMotherFirstName"
-                  />
-                </div>
-                
-                <div className="">
-                  <input
-                  className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
-                    name="mother_last_name"
-                    placeholder="Last Name" 
-                    required="required"
-                    type="text"
-                    id="EnquiryMotherLastName"
-                  />
-                </div>
-              </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
                 <div className="">
                   <label className="label" htmlFor="name">
@@ -247,7 +207,6 @@ const Addmission = () => {
                     name="address"
                     type="text" 
                     required="required"
-                    id="EnquiryEmail"
                   />
                 </div>
               </div>
