@@ -698,3 +698,11 @@ iframe#gb-waw-iframe{
 iframe#gb-waw-iframe:hover, iframe#gb-waw-iframe:active{
   width: 2046px !important;
 }
+.read-more-button:hover {
+  transform: perspective(1000px) rotateX(-20deg);
+}
+
+.read-more-button:hover .read-more-overlay {
+  transform: rotateX(0deg) translateZ(0);
+  opacity: 1;
+}
