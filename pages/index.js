@@ -27,6 +27,7 @@ export default function Home() {
       <Head>
         <title>MTS School | Mother Teressa Senior Secondary School Baharawanda Kalan</title>
         <meta name="description" content="mts school is committed to providing a high-quality education for all students, regardless of their background. We offer a variety of programs and services to meet the needs of our diverse student body. Our goal is to help every student reach their full potential." />
+        <meta name="description" content="Mother Teressa Senior Secondary School Baharawanda kalan, mts, mts school, mts school baharawanda kalan, barawanda kalan,  mother  teressa school" />
         <link rel="icon" href="/logo/favicon.png" />
         <meta name="google-site-verification" content="Qs4XobxT757h2HYne5BDi7Cn-FopBwFHyDe-wZEPiBQ" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -50,6 +51,18 @@ export default function Home() {
             hileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}>
             <a
+      <div>
+        <div className="banner">
+        <section className="bg-white dark:bg-gray-900">
+  <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+    <div className="mr-auto place-self-center lg:col-span-7">
+      <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
+      MTS School
+      </h1>
+      <p className="max-w-2xl mb-6 font-light  lg:mb-8 md:text-lg lg:text-xl text-gray-200">
+      Mother Teressa Senior Secondary School Baharawanda kalan
+      </p>
+      <a
         href="mailto:contactmtsschool@gmail.com"
         className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
       >
@@ -62,6 +75,7 @@ export default function Home() {
         >
           <path
  n            fillRule="evenodd"
+            fillRule="evenodd"
             d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
             clipRule="evenodd"
           />
@@ -72,8 +86,8 @@ export default function Home() {
         className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        >
-      <Link
+        <Link
+        className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
         href={'/addmission'}
       >
         Admission Form
@@ -88,6 +102,26 @@ export default function Home() {
   </a>
 </motion.div>
 </div>
+      </div>
+    </div>
+    <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+      <Image
+        src="/ceo.png" width={400} height={400}
+        alt="mts"
+      />
+    </div>
+  </div>
+</section>
+
+        </div>
+        <div className="flex flex-wrap justify-center m-3 space-x-3">
+          <div className="p-3 flex flex-col glass-blur text-center">
+            <Image alt='photo' src="/icons/stundent.png" width={100} height={100} />
+            <p className='threed glass p-1 text-3xl'>500+</p>
+          </div>
+          <div className="p-3 flex flex-col glass-blur text-center">
+            <Image alt='photo' src="/icons/teacher.png" width={100} height={100} />
+            <p className='threed glass p-1 text-3xl'>15+</p>
           </div>
              <motion.div  className="lg:mt-0 lg:col-span-5 lg:flex m-3" variants={cardVariants}>
             <Image
@@ -263,6 +297,7 @@ export default function Home() {
         <div className="wrapper">
           <header>Send us a Message</header>
           <form id="contact" method='POST' action='https://script.google.com/macros/s/AKfycbyljiE-vfkaJ_eHmDvmv2mNkRWMTM1sXSEdBFEwuy0U1CdNO2UxbJ0Cye6ccLRMx4gCzg/exec'>
+          <form id="contact" method='POST' action='https://script.google.com/macros/s/AKfycbwRtjoGdD362r39PmJ6VbZK5crkDoE2hp3bhuYlLTSnjqYLGbDu5-1ZgaTbE9BE4kCFbg/exec'>
             <div className="dbl-field">
               <div className="field">
                 <input required type="text" name="name" placeholder="Enter your name" />
@@ -317,6 +352,20 @@ Send Message<svg
             </a>
             <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.instagram.com/mtsschool1998/">
               <Image alt='instagram' src="/icons/instagram.png" width={30} height={30} />
+        <div className="glass -mt-5 p-1 text-gray-800 mb-24  flex justify-center items-center flex-wrap">
+          <p className='text-center'>© 2023 <Link href={'/'}>mts-seven.vercel.app</Link> — All Rights Reserved</p>
+          <div className="ml-4 flex">
+          <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.google.com/maps/place/MOTHER+TERESSA+SR.SEC.SCHOOL/@26.0164776,76.6950282,18z/data=!4m6!3m5!1s0x3971c5a3a3b38d7f:0xd7f03a79de35d82c!8m2!3d26.016386!4d76.6956022!16s%2Fg%2F11c6_ykb86">
+              <Image alt='photo' src="/icons/map.png" width={30} height={30} />
+            </a>
+            <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://twitter.com/MTSSchool98">
+              <Image alt='photo' src="/icons/twitter.png" width={30} height={30} />
+            </a>
+            <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.facebook.com/profile.php?id=100092324292806">
+              <Image alt='photo' src="/icons/facebook.png" width={30} height={30} />
+            </a>
+            <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.instagram.com/mtsschool1998/">
+              <Image alt='photo' src="/icons/instagram.png" width={30} height={30} />
             </a>
           </div>
         </div>

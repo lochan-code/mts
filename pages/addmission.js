@@ -14,7 +14,7 @@ const Addmission = () => {
                 <h4>MTS SCHOOL Registration Form</h4>
       </div>
             <form
-              action="https://script.google.com/macros/s/AKfycbwbPWYUMHruAVto9vPYVLFNKLvKMZ-md3tROzyRkYEisnmRinCBGQ6tqRCCXLzmS5Nr/exec"
+              action="https://script.google.com/macros/s/AKfycbyU99ZZVBuQsoWuDuk-Vkpy2xBJN_8FFJHa9zf0RVS0IFCMXwTsQOx8K2UCbiBlR7wd/exec"
               method="POST"
               className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto w-[95vw] mt-10 md:mt-0 cursor-default"
             >
