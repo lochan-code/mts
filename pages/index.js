@@ -318,9 +318,6 @@ export default function Home() {
       <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://twitter.com/MTSSchool98">
         <Image alt='photo' src="/icons/twitter.png" width={30} height={30} />
       </a>
-      <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://twitter.com/MTSSchool98">
-              <Image alt='twitter' src="/icons/twitter.png" width={30} height={30} />
-            </a>
             <a className='m-1 hover:scale-150  hover:rotate-45 transition-all' href="https://www.facebook.com/profile.php?id=100092324292806">
               <Image alt='facebook' src="/icons/facebook.png" width={30} height={30} />
             </a>
