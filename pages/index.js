@@ -218,8 +218,8 @@ export default function Home() {
 <div className="flex justify-center">
   <div className="bg-white w-full rounded-lg shadow-lg">
     <div className="flex flex-col md:flex-row items-center">
-      <motion.div className="md:w-1/2" variants={cardVariants}>
-        <Image alt="bus photo" src="/bus.jpg" className="w-full rounded-lg hidden md:block" />
+      <motion.div className="md:w-1/2 hidden md:block" variants={cardVariants}>
+        <Image alt="bus photo" src="/bus.jpg" width={300} height={200} className="rounded-lg " />
         {/* <div className="w-full rounded-lg md:hidden" style={{ backgroundImage: 'url(/bus.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', paddingBottom: '75%' }}></div> */}
       </motion.div>
       <div className="px-8 py-6">
