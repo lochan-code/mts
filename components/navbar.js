@@ -8,22 +8,22 @@ const Navbar = () => {
       <div className="fixed transition-all glass md:p-5 p-2 h-15 w-full items-center justify-start bottom-0 md:h-20 flex right-2 space-x-2">
         <div className="hidden sm:flex">
           <Link href="/">
-            <a target="_blank">
+            <a >
               <Image alt="MTS" src="/logo/black-transparent.png" width={100} height={40} />
             </a>
           </Link>
         </div>
         <Link href="/about">
-          <a target="_blank">
+          <a >
             <div className="transition-all icon-parent">
               <ul className="glass text-center flex flex-col text-black fixed left-14 text-xl p-3">
                 <Link href="/vnm">
-                  <a target="_blank">
+                  <a >
                     <li className="glass p-1 m-1">VISION AND MISSION</li>
                   </a>
                 </Link>
                 <Link href="/story">
-                  <a target="_blank">
+                  <a >
                     <li className="glass p-1 m-1">OUR STORY</li>
                   </a>
                 </Link>
@@ -36,16 +36,16 @@ const Navbar = () => {
           </a>
         </Link>
         <Link href="/addmission">
-          <a target="_blank">
+          <a >
             <div className="transition-all icon-parent">
               <ul className="glass text-center flex flex-col text-black fixed left-14 text-xl p-3">
                 <Link href="/process">
-                  <a target="_blank">
+                  <a >
                     <li className="glass p-1 m-1">ADMISSION PROCCESS AT MTS</li>
                   </a>
                 </Link>
                 <Link href="/addmission">
-                  <a target="_blank">
+                  <a >
                     <li className="glass p-1 m-1">ADMISSION ENQUIRY FORM</li>
                   </a>
                 </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
       </div>
       </Link> */}
         <Link href="/gallery">
-          <a target="_blank">
+          <a >
             <div className="transition-all icon-parent">
               <div className=" glass-blur md:p-3 p-1 flex justify-center z-50 items-center cursor-pointer">
                 <Image alt="photo" src="/icons/gallery.png" width={30} height={30} />
@@ -76,14 +76,14 @@ const Navbar = () => {
         <a
           className=" hover:scale-75 transition-all hover:rotate-12 z-50"
           href="tel:9983760244"
-          target="_blank"
+          
         >
           <Image alt="photo" src="/icons/call.png" width={40} height={40} />
         </a>
         <a
           className=" hover:scale-75 transition-all hover:rotate-12 z-50"
           href="mailto:contactmtsschool@gmail.com"
-          target="_blank"
+          
         >
           <Image alt="photo" src="/icons/mail.png" width={40} height={40} />
         </a>

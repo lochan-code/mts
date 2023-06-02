@@ -14,7 +14,7 @@ const Addmission = () => {
                 <h4>MTS SCHOOL Registration Form</h4>
       </div>
             <form
-              action="https://script.google.com/macros/s/AKfycbyU99ZZVBuQsoWuDuk-Vkpy2xBJN_8FFJHa9zf0RVS0IFCMXwTsQOx8K2UCbiBlR7wd/exec"
+              action="https://script.google.com/macros/s/AKfycbwbPWYUMHruAVto9vPYVLFNKLvKMZ-md3tROzyRkYEisnmRinCBGQ6tqRCCXLzmS5Nr/exec"
               method="POST"
               className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto w-[95vw] mt-10 md:mt-0 cursor-default"
             >
@@ -30,7 +30,7 @@ const Addmission = () => {
         <div className="flex flex-wrap items-center">
               <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
                 <div className="">
-                  <label className="label" htmlFor="name">
+                  <label className="text-black" htmlFor="name">
                     Student Name *
                   </label>
                 </div>
@@ -47,7 +47,7 @@ const Addmission = () => {
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
                 <div className="">
-                  <label className="label" htmlFor="name">
+                  <label className="text-black" htmlFor="name">
                     Father Name *
                   </label>
                 </div>
@@ -64,7 +64,7 @@ const Addmission = () => {
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
                 <div className="">
-                  <label className="label" htmlFor="name">
+                  <label className="text-black" htmlFor="name">
                     Mother Name
                   </label>
                 </div>
@@ -79,7 +79,7 @@ const Addmission = () => {
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
                 <div className="">
-                  <label className="label" htmlFor="dob">
+                  <label className="text-black" htmlFor="dob">
                     Admission Class *
                   </label>
                 </div>
@@ -118,7 +118,7 @@ const Addmission = () => {
               <br />
               <div className="flex md:m-2 m-1 justify-center items-center">
                 <div className="">
-                  <label className="label" htmlFor="name">
+                  <label className="text-black" htmlFor="name">
                     Medium
                   </label>
                 </div>
@@ -135,7 +135,7 @@ const Addmission = () => {
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
                 <div className="">
-                  <label className="label" htmlFor="dob">
+                  <label className="text-black" htmlFor="dob">
                     Date of Birth
                     <br />
                     <span style={{ fontSize: 10 }}>
@@ -155,7 +155,7 @@ const Addmission = () => {
                 </div>
               
               </div>  <div className="flex md:m-2 m-1 justify-center items-center">  <div className="">
-                  <label className="label" htmlFor="dob">
+                  <label className="text-black" htmlFor="dob">
                     Gender
                   </label>
                 </div>
@@ -172,7 +172,7 @@ const Addmission = () => {
                 </div>
               <div className="flex md:m-2 m-1 justify-center items-center ">
                 <div className="">
-                  <label className="label" htmlFor="dob">
+                  <label className="text-black" htmlFor="dob">
                     Father Mobile No *<br />
                     <span style={{ fontSize: 10 }}>
                       (We will call on this number)
@@ -184,7 +184,6 @@ const Addmission = () => {
                     <input
                     className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                       name="phone_1"
-                      placeholder="Enter Mobile No."
                       required="required"
                       minLength={1}
                       maxLength={10}
@@ -197,7 +196,7 @@ const Addmission = () => {
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center">
                 <div className="">
-                  <label className="label" htmlFor="name">
+                  <label className="text-black" htmlFor="name">
                     Address *
                   </label>
                 </div>
@@ -213,7 +212,7 @@ const Addmission = () => {
               <br />
               <div className="flex md:m-2 m-1 justify-center items-center">
                 <div className="col-xs-12">
-                  <label className="label">
+                  <label className="text-black">
                     Declaration : I HEREBY DECLARE THAT THE DETAILS FILLED ABOVE
                     IS CORRECT AND I SHALL BE SUBMITTING RELEVANT DOCUMENTS AT
                     THE TIME OF ADMISSION.

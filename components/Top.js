@@ -39,7 +39,6 @@ const Top = () => {
           <li>|</li>
           {/* <li>
             <Link
-              target="_blank"
               rel="noopener"
               href="https://onlineregcpsg.radicallogix.com/onlineregcpsg/Enquiries/enquiryadd"
             >
