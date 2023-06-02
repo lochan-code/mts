@@ -30,4 +30,4 @@ const vnm = () => {
   )
 }
 
-export default vnm
+export default vnm;
