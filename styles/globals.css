@@ -11,35 +11,16 @@ html {
   font-family: "Ubuntu", sans-serif;
 }
 body {
-  color: #fff;
+  color: #000;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
-  background-color: #f9e1e1;
-  background-image: linear-gradient(160deg, #fae7e7, #caf1ec);
+  background: #eee
+  /* background-color: #f9e1e1; */
+  /* background-image: linear-gradient(160deg, #fae7e7, #caf1ec); */
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
-
-h1 {
-  color: #88b04b;
-  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-  font-weight: 900;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-p {
-  color: #404f5e;
-  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  margin: 0;
-}
-i {
-  color: #9abc66;
-  font-size: 100px;
-  line-height: 200px;
-  margin-left: -15px;
-}
 .card {
   background: white;
   padding: 10px;
@@ -423,13 +404,13 @@ i {
   left: 54px;
 }
 .addmission_form{
-  background: url(../public/hero.jpg) center no-repeat;
+  /* background: url(../public/hero.jpg) center no-repeat; */
   background-size: cover;
   width: 100vw;
   height: 100%;
 }
 .hero {
-  background: url(../public/hero.jpg) center no-repeat;
+  /* background: url(../public/hero.jpg) center no-repeat; */
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -547,87 +528,15 @@ i {
 
 ::-webkit-scrollbar-track {
   background-color: #ebebeb;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #6d6d6d;
-}
-
-.container {
-  position: relative;
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-  max-width: 2560px;
-  text-align: center;
-  z-index: 1;
-}
-.container .card {
-  position: relative;
-  width: 280px;
-  margin: 30px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-}
-
-.container .card .content {
-  padding: 20px;
-  text-align: center;
-  transform: translateY(100px);
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.container .card:hover .content {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
-.container .card .content h2 {
-  position: absolute;
-  top: -80px;
-  right: 30px;
-  font-size: 4em;
-  color: rgba(255, 255, 255, 0.05);
-  pointer-events: none;
-}
-
-.container .card .content h3 {
-  font-size: 1.2em;
-  color: #fff;
-  z-index: 1;
-}
-
-.container .card .content p {
-  font-size: 1em;
-  color: #fff;
-  font-weight: 300;
-}
-
-.container .card .content a {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  margin-top: 15px;
-  background: #fff;
-  color: #000;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
+  }
 ::selection {
   color: #fff;
   background: #0d6efd;
@@ -744,7 +653,7 @@ form .button-area {
 }
 @media only screen and (max-width: 600px) {
   .bus-service {
-    background: url("./../public/bus\ -\ Copy.jpg") center;
+    /* background: url("./../public/bus\ -\ Copy.jpg") center; */
     height: 100px;
     background-size: cover;
     padding: 10px;
@@ -791,40 +700,8 @@ form .button-area {
     text-align: center;
   }
 }
-.linear-gradient-contact-vala {
-  background-color: #85ffbd;
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-}
-.linear-gradient-card-vala {
-  background-image: radial-gradient(
-    circle farthest-corner at 92.3% 71.5%,
-    rgba(83, 138, 214, 1) 0%,
-    rgba(134, 231, 214, 1) 90%
-  );
-}
 .fas {
   width: 32px;
-}
-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "El Messiri", sans-serif;
-  min-height: 100vh;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 .box {
   position: relative;
@@ -919,10 +796,6 @@ section {
 .gradient-image {
   background-image: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .tam {
   background: #fff;
@@ -1080,3 +953,23 @@ iframe#gb-waw-iframe:hover, iframe#gb-waw-iframe:active{
   transform: rotateX(0deg) translateZ(0);
   opacity: 1;
 }
+/* Google Fonts Linking */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');  
+
+/* Google Fonts 
+ */
+.abel{
+  font-family: 'Abel', sans-serif;
+}
+.space_grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero{
+  background: url('/hero.jpg') center no-repeat;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

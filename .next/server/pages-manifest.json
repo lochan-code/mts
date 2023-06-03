@@ -16,9 +16,9 @@
   "/process": "pages/process.html",
   "/sitemap": "pages/sitemap.html",
   "/story": "pages/story.html",
+  "/success_admission": "pages/success_admission.html",
   "/success_message": "pages/success_message.html",
   "/terms_and_conditions": "pages/terms_and_conditions.html",
-  "/success_admission": "pages/success_admission.html",
   "/vnm": "pages/vnm.html",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html"

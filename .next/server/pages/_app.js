@@ -40,18 +40,18 @@ const Navbar = ()=>{
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
                         className: "hidden sm:flex",
                         children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                            className: "cursor-pointer",
                             href: "/",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                    alt: "MTS",
-                                    src: "/logo/black-transparent.png",
-                                    width: 100,
-                                    height: 40
-                                })
+                            children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                alt: "MTS",
+                                src: "/logo/black-transparent.png",
+                                width: 100,
+                                height: 40
                             })
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        className: "cursor-pointer",
                         href: "/about",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -61,21 +61,19 @@ const Navbar = ()=>{
                                         className: "glass text-center flex flex-col text-black fixed left-14 text-xl p-3",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                className: "cursor-pointer",
                                                 href: "/vnm",
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        className: "glass p-1 m-1",
-                                                        children: "VISION AND MISSION"
-                                                    })
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    className: "glass p-1 m-1",
+                                                    children: "VISION AND MISSION"
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                className: "cursor-pointer",
                                                 href: "/story",
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        className: "glass p-1 m-1",
-                                                        children: "OUR STORY"
-                                                    })
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    className: "glass p-1 m-1",
+                                                    children: "OUR STORY"
                                                 })
                                             })
                                         ]
@@ -94,6 +92,7 @@ const Navbar = ()=>{
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        className: "cursor-pointer",
                         href: "/addmission",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                             children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
@@ -103,21 +102,19 @@ const Navbar = ()=>{
                                         className: "glass text-center flex flex-col text-black fixed left-14 text-xl p-3",
                                         children: [
                                             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                className: "cursor-pointer",
                                                 href: "/process",
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        className: "glass p-1 m-1",
-                                                        children: "ADMISSION PROCCESS AT MTS"
-                                                    })
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    className: "glass p-1 m-1",
+                                                    children: "ADMISSION PROCCESS AT MTS"
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                className: "cursor-pointer",
                                                 href: "/addmission",
-                                                children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                    children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                                        className: "glass p-1 m-1",
-                                                        children: "ADMISSION ENQUIRY FORM"
-                                                    })
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
+                                                    className: "glass p-1 m-1",
+                                                    children: "ADMISSION ENQUIRY FORM"
                                                 })
                                             })
                                         ]
@@ -136,18 +133,17 @@ const Navbar = ()=>{
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                        className: "cursor-pointer",
                         href: "/gallery",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: "transition-all icon-parent",
                             children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                className: "transition-all icon-parent",
-                                children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: " glass-blur md:p-3 p-1 flex justify-center z-50 items-center cursor-pointer",
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                        alt: "photo",
-                                        src: "/icons/gallery.png",
-                                        width: 30,
-                                        height: 30
-                                    })
+                                className: " glass-blur md:p-3 p-1 flex justify-center z-50 items-center cursor-pointer",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                    alt: "photo",
+                                    src: "/icons/gallery.png",
+                                    width: 30,
+                                    height: 30
                                 })
                             })
                         })
@@ -213,7 +209,7 @@ const Navbar = ()=>{
 
 const Top = ()=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: "flex space-y-2 lg:space-y-0 flex-col lg:flex-row bg-gray-900 text-white font-bold text-sm p-2",
+        className: "flex space-y-2 lg:space-y-0 flex-col lg:flex-row bg-gray-200 text-black font-bold text-sm p-2",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: "left",
@@ -227,7 +223,7 @@ const Top = ()=>{
                                 /*#__PURE__*/ jsx_runtime_.jsx("div", {
                                     className: "textwidget",
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                        className: "text-white text-sm",
+                                        className: "text-black text-sm",
                                         children: [
                                             "Call us: ",
                                             /*#__PURE__*/ jsx_runtime_.jsx("a", {
@@ -292,12 +288,14 @@ const Top = ()=>{
 /* harmony default export */ const components_Top = (Top);
 
 ;// CONCATENATED MODULE: ./pages/_app.js
+"use client";
 
 
 
 
 function MyApp({ Component , pageProps  }) {
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("html", {
+        lang: "en",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(components_Top, {}),
             /*#__PURE__*/ jsx_runtime_.jsx(Component, {

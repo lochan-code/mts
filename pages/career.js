@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
 import Head from "next/head";
+import Link from "next/link";
 import React from "react";
-
 const Career = () => {
   return (
     <div>
@@ -15,32 +16,51 @@ const Career = () => {
         />
         <link rel="icon" href="/logo/favicon.png" />
       </Head>
-      <div>
+      <div className="bg-slate-100">
         <div
           className="flex flex-col items-center" >
-          <div className="bg-[#0795FF] p-5 py-20 w-[80vw] m-2 text-center">
-            <h1 className="text-2xl bruno text-center text-white mb-2">
-              Join us and work with{" "}
-              <span className="font-bold bg-[#32A7FF] shadow-lg">
-                MTS School
-              </span>
+          <div className="p-5 py-20 m-2 text-center">
+            <h1 className="text-2xl bruno text-center mb-2 text-black">
+              
             </h1>
-            <div>
-              <a
-                href="#career"
-                className="px-4 py-2 text-sm font-medium border rounded-lg focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 bg-gray-700 border-gray-600 text-white hover:text-white hover:bg-gray-600 "
+            <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className='text-black text-[7vw] sm:text-[4vw] font-bold m-3'
+        >
+          Join us and work with{" "}
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className='text-gray-700 text-[5vw] font-bold m-3'
+        >
+          MTS School
+        </motion.h2>
+            <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
               >
-                APPLY NOW
-              </a>
-            </div>
+                <Link
+                  href="#career"
+                  >
+                  APPLY NOW
+                </Link>
+              </motion.div>
           </div>
         </div>
-        <div className="flex flex-col items-center bg-gray-900">
-          <div className="bg-[#0795FF] p-5 py-20 w-[80vw] m-2">
-            <h1 className="font-bold px-4 py-2 text-3xl text-white bg-[#32A7FF] hover:bg-[#32A7FF] shadow-lg">
+          <div className="flex flex-col items-center justify-center p-5 py-20 w-full m-2">
+            <motion.h1   initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }} className="font-bold px-4 py-2 text-3xl text-black shadow-lg">
               You’re in good company!
-            </h1>
-            <h1 className="text-xl bruno text-white mb-2">
+            </motion.h1>
+            <motion.p   initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }} className="text-xl bruno text-black mb-2">
               We are so fortunate to have a team of talented and dedicated
               educators like you here at our school. Your commitment to our
               students and their success is truly inspiring, and it is a
@@ -49,39 +69,35 @@ const Career = () => {
               vital part of our school community. We are proud to have you on
               our team and feel confident that together, we can continue to
               provide an exceptional education to our students.
-            </h1>
+            </motion.p>
           </div>
-        </div>
-        <section className="bg-gray-900" id="career">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
-            <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-              <h1 className="mb-4 text-4xl ubuntu tracking-tight font-extrabold text-white">
+        <motion.section  initial={{ y: -300 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }} className="bg-gray-100 p-5 mb-16" id="career">
+              <h1 className="mb-4 text-4xl ubuntu tracking-tight font-extrabold text-black">
               Grow your career with MTS School
               </h1>
-            </div>
-            <section className="w-[90vw]">
-  <div className="py-8 px-4 mx-auto w-full max-w-2xl lg:py-16 bg-gray-800">
     <form method="POST" action="https://script.google.com/macros/s/AKfycbxbuazVKQsM0y6yBg5MQTgZbpTdaCuzjNv8iNFngMj4Rgapb3KF2X_bYmoi0mNciqryPg/exec">
-    <h2 className="mb-4 text-xl font-bold ubuntu text-white">
+    <h2 className="mb-4 text-xl font-bold ubuntu text-black">
     Basic Info
     </h2>
       <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
         <div className="sm:col-span-2">
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
             Candidate Name *
           </label>
           <input
             type="text"
             name="name"
-            className="border  text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className="text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
             required=""
           />
         </div>
         <div className="w-full">
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
             Mobile Number *
           </label>
@@ -89,31 +105,31 @@ const Career = () => {
             type="numebr"
             maxLength={10}
             name="number"
-            className=" text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className=" text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
             required=""
           />
         </div>
         <div className="w-full">
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
             Email ID
           </label>
           <input
             type="text"
             name="email_id"
-            className=" text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className=" text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
           />
         </div>
         <div>
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
             Gender *
           </label>
           <select
             name="gender"
-            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
           >
             <option value={0}> Select Gender</option>
             <option value="male">👨‍🏫 Male</option>
@@ -122,29 +138,29 @@ const Career = () => {
         </div>
         <div>
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
             Address
           </label>
           <input
             type="text"
             name="address"
-            className=" text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className=" text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
           />
         </div>
       </div>
-      <h2 className="my-4 text-xl font-bold ubuntu text-white">
+      <h2 className="my-4 text-xl font-bold ubuntu text-black">
       Professional Details 
     </h2>
     <div>
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
             Level of Education *
           </label>
           <select
             name="level_of_education"
-            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
           >
             <option value={0}>- Select -</option>
             <option value="ba"> B.A. </option>
@@ -162,13 +178,13 @@ const Career = () => {
         </div>
         <div>
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
             You can Teach *
           </label>
           <select
             name="you_can_teach"
-            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
           >
             <option value={0}>- Select -</option>
             <option value="primary only">Primary Only</option>
@@ -183,13 +199,13 @@ const Career = () => {
         </div>
         <div>
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
            Employment Type *
           </label>
           <select
             name="employment_type"
-            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
           >
             <option value={0}>- Select -</option>
             <option value="full time">Full Time</option>
@@ -198,30 +214,29 @@ const Career = () => {
         </div>
         <div>
           <label
-            className="block mb-2 text-sm font-medium text-white"
+            className="block mb-2 text-sm font-medium text-black"
           >
-            Are You A Fresher or Experienced *
-          </label>
-          <select
-            name="fresher/experienced"
-            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
-          >
-            <option value={0}>- Select -</option>
-            <option value="fresher">Fresher</option>
-            <option value="experienced">Experienced</option>
-          </select>
+            Experience *
+          </label>  
+          <input
+            name="experience"
+            className=" text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-200 border-gray-600 placeholder-gray-400 text-black focus:ring-primary-500 focus:border-primary-500"
+          />
         </div>
+        <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 m-5"
+              >
       <button
         type="submit"
-        className="text-white mt-3 bg-blue-700 hover:bg-blue-800 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none focus:ring-blue-800"
       >
         Submit
       </button>
+              </motion.div>
     </form>
-  </div>
-</section>
-          </div>
-        </section>
+        </motion.section>
+        <div>.</div>
       </div>
     </div>
   );

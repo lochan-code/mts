@@ -1,4 +1,4 @@
-"use strict"
+"use client"
 import { useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -28,35 +28,43 @@ export default function Home() {
         <title>MTS School | Mother Teressa Senior Secondary School Baharawanda Kalan</title>
         <meta name="description" content="mts school is committed to providing a high-quality education for all students, regardless of their background. We offer a variety of programs and services to meet the needs of our diverse student body. Our goal is to help every student reach their full potential." />
         <meta name="description" content="Mother Teressa Senior Secondary School Baharawanda kalan, mts, mts school, mts school baharawanda kalan, barawanda kalan,  mother  teressa school" />
+        <meta name="viewport" />
+        <meta name="white" />
         <link rel="icon" href="/logo/favicon.png" />
         <meta name="google-site-verification" content="Qs4XobxT757h2HYne5BDi7Cn-FopBwFHyDe-wZEPiBQ" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="apple-touch-icon" href="/logo/favicon.png" />
       </Head>
-      <div>
-      <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
-      >
-        <div>
-          <div className="max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid lg:grid-cols-12">
-            <div className="mr-auto place-self-center lg:col-span-7">
-              <h1 className={`mb-6 font-bold lg:mb-8 md:text-2xl text-gray-900 lg:text-4xl text-xl`}>
-                Mother Teressa Senior Secondary School<span className='text-slate-700'> Baharawanda kalan</span>
-              </h1>
-              <div className="flex">
+      <div className="bg-slate-100">
+      <div className='h-[100vh] flex items-center justify-center hero'>
+      <div className="space_grotesk">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className='text-black text-[7vw] sm:text-[4vw] font-bold m-3'
+        >
+          Mother Teressa Senior Secondary School
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className='text-gray-700 text-[5vw] font-bold m-3'
+        >
+          Baharawanda Kalan
+        </motion.h2>
+        <div className="flex ml-3">
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                className=''
+                className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
               >
-                <a
+                <Link
                   href="mailto:contactmtsschool@gmail.com"
-                  className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
-                >
+                  >
                   Contact Us
-                </a>
+                </Link>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.1 }}
@@ -70,31 +78,13 @@ export default function Home() {
                 </Link>
               </motion.div>
               </div>
-            </div>
-            <div className="place-self-center lg:col-span-5">
-              <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2, duration: 0.8 }}
-              >
-                <Image
-                  src="/gallery7.jpg"
-                  alt="MTS School Logo"
-                  width={500}
-                  height={400}
-                />
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </motion.div>
+      </div>
+    </div>
 <div className="flex flex-wrap justify-center m-3 space-x-3">
   <motion.div
     className="p-3 flex flex-col bg-blue-200 rounded-md shadow-lg text-center"
     whileHover={{ scale: 1.1 }}
     animate={{
-      scale: [1, 2, 2, 1, 1],
-      rotate: [0, 0, 270, 270, 0],
       borderRadius: ["20%", "20%", "50%", "50%", "20%"],
     }}
   >
@@ -105,8 +95,6 @@ export default function Home() {
     className="p-3 flex flex-col bg-green-200 rounded-md shadow-lg text-center"
     whileHover={{ scale: 1.1 }}
     animate={{
-      scale: [1, 2, 2, 1, 1],
-      rotate: [0, 0, 270, 270, 0],
       borderRadius: ["20%", "20%", "50%", "50%", "20%"],
     }}
   >
@@ -117,56 +105,56 @@ export default function Home() {
 
 <div>
   <h1 className='text-black text-center text-4xl font-bold py-6'>Facilities</h1>
-  <div className="flex flex-wrap p-2 justify-center items-center">
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+  <motion.div  initial={{y: -100}} whileInView={{y: 0}} transition={{delay: 0.3}} className="flex flex-wrap p-2 justify-center items-center">
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Medium: Hindi</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Medium: English</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>From 1 to 12</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Total Teachers: 15+</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Male Teachers: 10+</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Female Teachers: 2+</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Electricity</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Library</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Playground</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Drinking Water</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Contact Teacher</p>
-    </div>
-    <div className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" className='max-w-[768px]' width={40} height={40} />
       <p className='ml-1 text-sm text-gray-800'>Students Motivated</p>
-    </div>
-  </div>
+    </motion.div>
+  </motion.div>
 </div>
 
       {/* <div className="bg-gray-900 py-12">
@@ -215,14 +203,11 @@ export default function Home() {
           </div>
         </div>
       </div> */}
-<div className="flex justify-center">
-  <div className="bg-white w-full rounded-lg shadow-lg">
     <div className="flex flex-col md:flex-row items-center">
-      <motion.div className="md:w-1/2 hidden md:block" variants={cardVariants}>
-        <Image alt="bus photo" src="/bus.jpg" width={300} height={200} className="rounded-lg " />
-        {/* <div className="w-full rounded-lg md:hidden" style={{ backgroundImage: 'url(/bus.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', paddingBottom: '75%' }}></div> */}
+      <motion.div className="md:w-1/2 hidden md:block" initial={{x:-30}} whileInView={{x: 0}} transition={{delay: 0.3}} variants={cardVariants}>
+        <Image alt="bus photo" src="/bus.jpg" width={500} height={350} className="rounded-md shadow-xl" />
       </motion.div>
-      <div className="px-8 py-6">
+      <div className="px-8 md:w-1/2 py-6 bg-white rounded-md shadow-xl">
         <h1 className="text-2xl font-semibold text-gray-500 mb-4">School Bus Service Available</h1>
         <p className="text-gray-500 mb-4">
           Our school provides a reliable bus service for students residing in several villages.
@@ -259,24 +244,22 @@ export default function Home() {
         </motion.ul>
       </div>
     </div>
-  </div>
-</div>
 
 
-<div className="flex flex-col justify-center linear-gradient-contact-vala items-center p-5">
+<div className="flex flex-col justify-center bg-slate-100 text-black items-center p-5">
   <div className="wrapper">
     <header>Send us a Message</header>
     <form id="contact" method='POST' action='https://script.google.com/macros/s/AKfycbyljiE-vfkaJ_eHmDvmv2mNkRWMTM1sXSEdBFEwuy0U1CdNO2UxbJ0Cye6ccLRMx4gCzg/exec'>
       <div className="dbl-field">
         <div className="field">
-          <input required type="text" name="name" placeholder="Enter your name" />
+          <input autoComplete="true" required type="text" name="name" placeholder="Enter your name" />
         </div>
         <div className="field">
-          <input required type="email" name="email" placeholder="Enter your email" />
+          <input autoComplete="true" required type="email" name="email" placeholder="Enter your email" />
         </div>
       </div>
       <div className="message">
-        <textarea required
+        <textarea autoComplete="true" required
           placeholder="Write your message"
           name="message"
           defaultValue={""}
@@ -330,7 +313,7 @@ export default function Home() {
       <h1 className="text-slate-500 font-medium">This site is designed, developed, maintained and hosted by</h1>
       <h1 className="text-lg text-black font-semibold"><a href='mailto:lochanjangidcoder@gmail.com'>Lochan Jangid</a></h1>
     </div>
-    <ul className="flex flex-wrap space-x-2">
+    <ul className="flex flex-wrap justify-center sm:justify-start space-x-2 text-black">
       <li>
         <Link href={"/terms_and_conditions"} aria-current="page">
           Terms and Conditions

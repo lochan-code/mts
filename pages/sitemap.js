@@ -12,7 +12,7 @@ const sitemap = () => {
         </title>
       </Head>
       <div>
-        <div className="flex flex-wrap space-x-2 space-y-2 md:space-y-0  m-20">
+        <div className="flex flex-col md:flex-row space-x-2 space-y-2 md:space-y-0  m-20">
           <Link href={"/"}>
             <div className="inline-flex cursor-pointer items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <span className="w-full">Home</span>
@@ -52,7 +52,7 @@ const sitemap = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-wrap space-x-2 space-y-2 md:space-y-0  m-20">
+        <div className="flex flex-col md:flex-row space-x-2 space-y-2 md:space-y-0  m-20">
           <Link href={"/about"}>
             <div className="inline-flex cursor-pointer items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <span className="w-full">/ about</span>
@@ -82,7 +82,7 @@ const sitemap = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-wrap space-x-2 space-y-2 md:space-y-0  m-20">
+        <div className="flex flex-col md:flex-row space-x-2 space-y-2 md:space-y-0  m-20">
           <Link href={"/addmission"}>
             <div className="inline-flex cursor-pointer items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <span className="w-full">/ admission</span>
@@ -112,7 +112,7 @@ const sitemap = () => {
             </div>
           </Link>
         </div>
-        <div className="flex flex-wrap space-x-2 space-y-2 md:space-y-0  m-20">
+        <div className="flex flex-col md:flex-row space-x-2 space-y-2 md:space-y-0  m-20">
           <Link href={"/gallery"}>
             <div className="inline-flex cursor-pointer items-center justify-center p-5 text-base font-medium text-gray-500 rounded-lg bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white">
               <span className="w-full">/ gallery</span>

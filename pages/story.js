@@ -11,7 +11,7 @@ const story = () => {
           content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school, vision, mission, story, importance, disciplined, sanskaar"
         />
         <link rel="icon" href="/logo/favicon.png" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
       </Head>
       <div className="m-3 p-2 bg-white mb-32">
         <h1 className="font-bold text-2xl text-gray-800 p-1 shadow-sm w-40">

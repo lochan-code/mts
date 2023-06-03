@@ -6,24 +6,31 @@ const Gallery = () => {
   const [people, setPeople] = useState([
     {
       url: "/gallery1.jpg",
+       "purpose": "any maskable"
     },
     {
       url: "/gallery2.jpg",
+       "purpose": "any maskable"
     },
     {
       url: "/gallery3.jpg",
+       "purpose": "any maskable"
     },
     {
       url: "/gallery4.jpg",
+       "purpose": "any maskable"
     },
     {
       url: "/gallery5.jpg",
+       "purpose": "any maskable"
     },
     {
       url: "/gallery6.jpg",
+       "purpose": "any maskable"
     },
     {
       url: "/gallery7.jpg",
+       "purpose": "any maskable"
     },
   ]);
   return (
@@ -41,9 +48,9 @@ const Gallery = () => {
       </Head>
       <div className="flex flex-wrap justify-center items-center">
         {people.map((person) => {
-          return (
+          return(
             <TinderCard
-              key={person.name}
+              key={person.url}
               preventSwipe={["up", "down"]}
               onSwipe={(dir) => swiped(dir, person.name)}
               onCardLeftScreen={() => outofFrame(person.name)}
@@ -59,7 +66,7 @@ const Gallery = () => {
               </div>
             </TinderCard>
           );
-        })}
+        })};
       </div>
       </div>
   );

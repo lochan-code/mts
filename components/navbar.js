@@ -7,27 +7,21 @@ const Navbar = () => {
     <>
       <div className="fixed transition-all glass md:p-5 p-2 h-15 w-full items-center justify-start bottom-0 md:h-20 flex right-2 space-x-2">
         <div className="hidden sm:flex">
-          <Link href="/">
-            <a >
+          <Link className='cursor-pointer' href="/">
               <Image alt="MTS" src="/logo/black-transparent.png" width={100} height={40} />
-            </a>
           </Link>
         </div>
-        <Link href="/about">
+        <Link className='cursor-pointer' href="/about">
           <a >
             <div className="transition-all icon-parent">
               <ul className="glass text-center flex flex-col text-black fixed left-14 text-xl p-3">
-                <Link href="/vnm">
-                  <a >
+                <Link className='cursor-pointer' href="/vnm">
                     <li className="glass p-1 m-1">VISION AND MISSION</li>
-                  </a>
                 </Link>
-                <Link href="/story">
-                  <a >
+                <Link className='cursor-pointer' href="/story">
                     <li className="glass p-1 m-1">OUR STORY</li>
-                  </a>
                 </Link>
-                {/* <Link href={'/'}><li className='glass p-1 m-1'>ACHIEVEMENTS</li></Link> */}
+                {/* <Link className='cursor-pointer' href={'/'}><li className='glass p-1 m-1'>ACHIEVEMENTS</li></Link> */}
               </ul>
               <div className=" glass-blur md:p-3 p-1 flex justify-center items-center cursor-pointer ">
                 <Image alt="photo" src="/icons/about.png" width={30} height={30} />
@@ -35,19 +29,15 @@ const Navbar = () => {
             </div>
           </a>
         </Link>
-        <Link href="/addmission">
+        <Link className='cursor-pointer' href="/addmission">
           <a >
             <div className="transition-all icon-parent">
               <ul className="glass text-center flex flex-col text-black fixed left-14 text-xl p-3">
-                <Link href="/process">
-                  <a >
+                <Link className='cursor-pointer' href="/process">
                     <li className="glass p-1 m-1">ADMISSION PROCCESS AT MTS</li>
-                  </a>
                 </Link>
-                <Link href="/addmission">
-                  <a >
+                <Link className='cursor-pointer' href="/addmission">
                     <li className="glass p-1 m-1">ADMISSION ENQUIRY FORM</li>
-                  </a>
                 </Link>
               </ul>
               <div className=" glass-blur md:p-3 p-1 flex justify-center items-center z-50 cursor-pointer">
@@ -56,7 +46,7 @@ const Navbar = () => {
             </div>
           </a>
         </Link>
-        {/* <Link href={'/payment'}>
+        {/* <Link className='cursor-pointer' href={'/payment'}>
         <div className='transition-all icon-parent'>
         <p className=' glass-blur text-center text-black -mb-6 text-xl p-3'>Pay Fee</p>
       <div className=" glass-blur md:p-3 p-1 flex justify-center items-center cursor-pointer">
@@ -64,19 +54,16 @@ const Navbar = () => {
       </div>
       </div>
       </Link> */}
-        <Link href="/gallery">
-          <a >
+        <Link className='cursor-pointer' href="/gallery">
             <div className="transition-all icon-parent">
               <div className=" glass-blur md:p-3 p-1 flex justify-center z-50 items-center cursor-pointer">
                 <Image alt="photo" src="/icons/gallery.png" width={30} height={30} />
               </div>
             </div>
-          </a>
         </Link>
         <a
           className=" hover:scale-75 transition-all hover:rotate-12 z-50"
           href="tel:9983760244"
-          
         >
           <Image alt="photo" src="/icons/call.png" width={40} height={40} />
         </a>

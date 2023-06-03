@@ -10,25 +10,23 @@ const Addmission = () => {
         <link rel="icon" href="/logo/favicon.png" />
       </Head>
       <div className="addmission_form flex flex-col justify-center items-center">
-      <div className="title-font  text-center font-medium text-3xl text-gray-100">
-                <h4>MTS SCHOOL Registration Form</h4>
+      <div className="title-font  text-center font-medium text-3xl text-gray-900">
+                <h1>MTS SCHOOL Registration Form</h1>
       </div>
             <form
               action="https://script.google.com/macros/s/AKfycbwbPWYUMHruAVto9vPYVLFNKLvKMZ-md3tROzyRkYEisnmRinCBGQ6tqRCCXLzmS5Nr/exec"
               method="POST"
-              className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto w-[95vw] mt-10 md:mt-0 cursor-default"
+              id="addmissionForm"
+              name="addmissionForm"
+              className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto cursor-default"
             >
-              <div style={{ display: "none" }}>
-                <input
-                className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1' type="hidden" name="_method" defaultValue="POST" />
-              </div>
               <span className="help-block alert-success" />
               <h4 className="text-gray-900 text-lg font-medium title-font mb-5">Academic Session 2021-2022</h4>
               <span className="flex items-start bg-red-600 p-2 flex-col leading-none">
           <span className="title-font text-white font-medium"> Note: All the entries must be in CAPITAL LETTERS.</span>
         </span>
-        <div className="flex flex-wrap items-center">
-              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
+        <div className="flex flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 w-full items-center sm:items-start">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="name">
                     Student Name *
@@ -36,57 +34,61 @@ const Addmission = () => {
                 </div>
                 <div className="">
                   <div className="input-group">
-                    <input
-                    className='bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2  transition-colors duration-200 ease-in-out m-1'
+                    <input autoComplete="true"
+                    className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                       name="st"
+                      id="name"
                       required="required"
                       type="text"
                     />
                   </div>
                 </div>
               </div>
-              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
-                  <label className="text-black" htmlFor="name">
+                  <label className="text-black" htmlFor="fname">
                     Father Name *
                   </label>
                 </div>
                 <div className="">
                   <div className="input-group">
-                    <input
+                    <input autoComplete="true"
                     className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                       name="father"
+                      id="fname"
                       required="required"
                       type="text"
                     />
                   </div>
                 </div>
               </div>
-              <div className="flex md:m-2 m-1 justify-center items-center flex-wrap">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
-                  <label className="text-black" htmlFor="name">
+                  <label className="text-black" htmlFor="mname">
                     Mother Name
                   </label>
                 </div>
                 <div className="">
-                  <input
+                  <input autoComplete="true"
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="mother"
+                    id="mname"
                      required="required"
                     type="text"
                   />
                 </div>
               </div>
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
-                  <label className="text-black" htmlFor="dob">
+                  <label className="text-black" htmlFor="adcl">
                     Admission Class *
                   </label>
                 </div>
                 <div className="">
                   <div className="input-group">
-                    <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
+                    <select autoComplete="true" className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-2.5 md:px-1 py-1 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                       name="class"
+                      id="adcl"
                       required="required"
                     >
                       <option value="">Select Class</option>
@@ -116,15 +118,16 @@ const Addmission = () => {
                 </div>
               </div>
               <br />
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
-                  <label className="text-black" htmlFor="name">
+                  <label className="text-black" htmlFor="medium">
                     Medium
                   </label>
                 </div>
-                <div className="">
-                  <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
+                <div className="input-group">
+                  <select autoComplete="true" className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-2.5 md:px-1 py-1 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="medium"
+                    id="medium"
                     required="required"
                   >
                     <option value="">Select Medium</option>
@@ -133,7 +136,7 @@ const Addmission = () => {
                   </select>
                 </div>
               </div>
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="dob">
                     Date of Birth
@@ -144,24 +147,27 @@ const Addmission = () => {
                   </label>
                 </div>
                 <div className="">
-                  <input
+                  <input autoComplete="true"
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="date_of_birth"
+                    id="dob"
                     placeholder="Select Date"
                     required="required"
                     type="date"
-                    id="EnquiryDateOfBirth"
                   />
                 </div>
               
-              </div>  <div className="flex md:m-2 m-1 justify-center items-center">  <div className="">
-                  <label className="text-black" htmlFor="dob">
+              </div> 
+               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row"> 
+                <div className="">
+                  <label className="text-black" htmlFor="gender">
                     Gender
                   </label>
                 </div>
                 <div className="">
-                  <select className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
+                  <select autoComplete="true" className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-2.5 md:px-1 py-1 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="gender"
+                    id="gender"
                     required="required"
                   >
                     <option value="">Select Gender</option>
@@ -170,9 +176,9 @@ const Addmission = () => {
                   </select>{" "}
                 </div>
                 </div>
-              <div className="flex md:m-2 m-1 justify-center items-center ">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
-                  <label className="text-black" htmlFor="dob">
+                  <label className="text-black" htmlFor="number">
                     Father Mobile No *<br />
                     <span style={{ fontSize: 10 }}>
                       (We will call on this number)
@@ -181,53 +187,51 @@ const Addmission = () => {
                 </div>
                 <div className="">
                   <div className="input-group">
-                    <input
+                    <input autoComplete="true"
                     className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                       name="phone_1"
+                      id="number"
                       required="required"
                       minLength={1}
                       maxLength={10}
                       pattern="[0-9]{10}"
                       type="text"
-                      id="EnquiryPhone1"
                     />
                   </div>
                 </div>
               </div>
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
-                  <label className="text-black" htmlFor="name">
+                  <label className="text-black" htmlFor="address">
                     Address *
                   </label>
                 </div>
                 <div className="">
-                  <input
+                  <input autoComplete="true"
                   className='w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 md:py-1 md:px-1 py-1/2 px-1/2 leading-8 transition-colors duration-200 ease-in-out m-1'
                     name="address"
+                    id="address"
                     type="text" 
                     required="required"
                   />
                 </div>
               </div>
               <br />
-              <div className="flex md:m-2 m-1 justify-center items-center">
+              </div>
                 <div className="col-xs-12">
-                  <label className="text-black">
+                  <p className="text-black">
                     Declaration : I HEREBY DECLARE THAT THE DETAILS FILLED ABOVE
                     IS CORRECT AND I SHALL BE SUBMITTING RELEVANT DOCUMENTS AT
                     THE TIME OF ADMISSION.
-                  </label>
+                  </p>
                 </div>
-              </div>
-              </div>
               <button
                 type="submit"
-                className="text-white bg-indigo-500 relative border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                className="text-white bg-indigo-500 relative border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 data-loading-text="Sending..."
                 style={{ display: "block", marginTop: 10 }}
-              >
-                Save
-              </button>
+                value={'Submit'}
+             />
               <br/>
               <br/>
             </form>
