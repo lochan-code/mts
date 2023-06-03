@@ -21,7 +21,7 @@ const Addmission = () => {
               className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto cursor-default"
             >
               <span className="help-block alert-success" />
-              <h4 className="text-gray-900 text-lg font-medium title-font mb-5">Academic Session 2021-2022</h4>
+              <h4 className="text-gray-900 text-lg font-medium title-font mb-5">Academic Session 2023-24</h4>
               <span className="flex items-start bg-red-600 p-2 flex-col leading-none">
           <span className="title-font text-white font-medium"> Note: All the entries must be in CAPITAL LETTERS.</span>
         </span>
