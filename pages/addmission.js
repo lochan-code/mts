@@ -225,7 +225,7 @@ const Addmission = () => {
                     THE TIME OF ADMISSION.
                   </p>
                 </div>
-              <button
+              <input
                 type="submit"
                 className="text-white bg-indigo-500 relative border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 data-loading-text="Sending..."
