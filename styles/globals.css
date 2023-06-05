@@ -969,7 +969,6 @@ iframe#gb-waw-iframe:hover, iframe#gb-waw-iframe:active{
 .hero{
   background: url('/hero.jpg') center no-repeat;
 }
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

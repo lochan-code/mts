@@ -30,12 +30,14 @@ export default function Home() {
         <meta name="description" content="Mother Teressa Senior Secondary School Baharawanda kalan, mts, mts school, mts school baharawanda kalan, barawanda kalan,  mother  teressa school" />
         <meta name="viewport" />
         <meta name="white" />
-        <link rel="icon" href="/logo/favicon.png" />
+        <link rel="icon" href="/logo.png" />
         <meta name="google-site-verification" content="Qs4XobxT757h2HYne5BDi7Cn-FopBwFHyDe-wZEPiBQ" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="apple-touch-icon" href="/logo/favicon.png" />
       </Head>
       <div className="bg-slate-100">
+        <motion.div   initial={{ opacity: 0, y: -100, x: -20 }}
+          whileInView={{ opacity: 1, y: 0, x:0 }} className="flex justify-center"><Image src='/bunner1.png' width={1000} height={500} alt="मदर टेरेसा उच्च माध्यमिक विद्यालय में गर्व से प्रकटित होते हैं छात्रों के परिणाम" /></motion.div>
       <div className='h-[100vh] flex items-center justify-center hero'>
       <div className="space_grotesk">
         <motion.h1

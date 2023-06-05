@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ _app)
+  "default": () => (/* binding */ MyApp)
 });
 
 // EXTERNAL MODULE: external "react/jsx-runtime"
@@ -38,15 +38,15 @@ const Navbar = ()=>{
                 className: "fixed transition-all glass md:p-5 p-2 h-15 w-full items-center justify-start bottom-0 md:h-20 flex right-2 space-x-2",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "hidden sm:flex",
+                        className: "hidden sm:flex mr-5",
                         children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                             className: "cursor-pointer",
                             href: "/",
                             children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                 alt: "MTS",
-                                src: "/logo/black-transparent.png",
-                                width: 100,
-                                height: 40
+                                src: "/logo.png",
+                                width: 50,
+                                height: 50
                             })
                         })
                     }),
@@ -288,7 +288,7 @@ const Top = ()=>{
 /* harmony default export */ const components_Top = (Top);
 
 ;// CONCATENATED MODULE: ./pages/_app.js
-"use client";
+// "use client"
 
 
 
@@ -304,9 +304,7 @@ function MyApp({ Component , pageProps  }) {
             /*#__PURE__*/ jsx_runtime_.jsx(navbar, {})
         ]
     });
-}
-;
-/* harmony default export */ const _app = (MyApp);
+};
 
 
 /***/ }),

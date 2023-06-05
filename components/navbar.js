@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <>
       <div className="fixed transition-all glass md:p-5 p-2 h-15 w-full items-center justify-start bottom-0 md:h-20 flex right-2 space-x-2">
-        <div className="hidden sm:flex">
+        <div className="hidden sm:flex mr-5">
           <Link className='cursor-pointer' href="/">
-              <Image alt="MTS" src="/logo/black-transparent.png" width={100} height={40} />
+              <Image alt="MTS" src="/logo.png" width={50} height={50} />
           </Link>
         </div>
         <Link className='cursor-pointer' href="/about">
