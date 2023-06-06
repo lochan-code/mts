@@ -5,31 +5,38 @@ const Addmission = () => {
   return (
     <div>
       <Head>
-        <title>Addmission - MTS School</title>
-        <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school" />
+        <title>प्रवेश - MTS स्कूल</title>
+        <meta
+          name="description"
+          content="mts स्कूल में आपका स्वागत है, मदर टेरेसा सीनियर सेकेंडरी स्कूल बहरावनडा कलां, बहरावनडा कलां, प्रवेश फॉर्म, अभी संपर्क करें, तुलसीराम जांगिड़, mts स्कूल तुलसीराम जांगिड़, शिक्षा, अंग्रेजी, हिंदी, प्रवेश, छात्र, छात्रा, शिक्षक, अध्ययन, स्कूल, अच्छा स्कूल"
+        />
         <link rel="icon" href="/logo/favicon.png" />
       </Head>
       <div className="addmission_form flex flex-col justify-center items-center">
-      <div className="title-font  text-center font-medium text-3xl text-gray-900">
-                <h1>MTS SCHOOL Registration Form</h1>
-      </div>
-            <form
-              action="https://script.google.com/macros/s/AKfycbwbPWYUMHruAVto9vPYVLFNKLvKMZ-md3tROzyRkYEisnmRinCBGQ6tqRCCXLzmS5Nr/exec"
-              method="POST"
-              id="addmissionForm"
-              name="addmissionForm"
-              className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto cursor-default"
-            >
-              <span className="help-block alert-success" />
-              <h4 className="text-gray-900 text-lg font-medium title-font mb-5">Academic Session 2023-24</h4>
-              <span className="flex items-start bg-red-600 p-2 flex-col leading-none">
-          <span className="title-font text-white font-medium"> Note: All the entries must be in CAPITAL LETTERS.</span>
-        </span>
-        <div className="flex flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 w-full items-center sm:items-start">
+        <div className="title-font  text-center font-medium text-3xl text-gray-900">
+          <h1 className="text-gray-900">MTS स्कूल पंजीकरण फ़ॉर्म</h1>
+        </div>
+        <form
+          action="https://script.google.com/macros/s/AKfycbwbPWYUMHruAVto9vPYVLFNKLvKMZ-md3tROzyRkYEisnmRinCBGQ6tqRCCXLzmS5Nr/exec"
+          method="POST"
+          id="addmissionForm"
+          name="addmissionForm"
+          className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto cursor-default"
+        >
+          <span className="help-block alert-success" />
+          <h4 className="text-gray-900 text-lg font-medium title-font mb-5">
+            शैक्षणिक सत्र 2023-24
+          </h4>
+          <span className="flex items-start bg-red-600 p-2 flex-col leading-none">
+            <span className="title-font text-white font-medium">
+              ध्यान दें: सभी एंट्री कैपिटल लेटर में होनी चाहिए।
+            </span>
+          </span>
+        <div className="flex w-[100vw] flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 w-full items-center sm:items-start">
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="name">
-                    Student Name *
+                  छात्र का नाम *
                   </label>
                 </div>
                 <div className="">
@@ -47,7 +54,7 @@ const Addmission = () => {
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="fname">
-                    Father Name *
+                  पिता का नाम *
                   </label>
                 </div>
                 <div className="">
@@ -65,7 +72,7 @@ const Addmission = () => {
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="mname">
-                    Mother Name
+                  माता का नाम
                   </label>
                 </div>
                 <div className="">
@@ -81,7 +88,7 @@ const Addmission = () => {
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="adcl">
-                    Admission Class *
+                  प्रवेश कक्षा *
                   </label>
                 </div>
                 <div className="">
@@ -91,7 +98,7 @@ const Addmission = () => {
                       id="adcl"
                       required="required"
                     >
-                      <option value="">Select Class</option>
+                      <option value="">कक्षा चुनें</option>
                       <option value="Pre-Nursery">Pre-Nursery</option>
                       <option value="Nursery">Nursery</option>
                       <option value="KG">KG</option>
@@ -106,22 +113,21 @@ const Addmission = () => {
                       <option value="IX">IX</option>
                       <option value="X">X</option>
                       <option value="XI - ARTS">XI - ARTS</option>
-                      <option value="XI - COMMERCE">XI - COMMERCE</option>
-                      <option value="XI - ICCP">XI - ICCP</option>
-                      <option value="XI - SCIENCE">XI - SCIENCE</option>
-                      <option value="XII - SCIENCE">XII - SCIENCE</option>
-                      <option value="XII - ICCP">XII - ICCP</option>
+                      {/* <option value="XI - COMMERCE">XI - COMMERCE</option> */}
+                      {/* <option value="XI - ICCP">XI - ICCP</option> */}
+                      {/* <option value="XI - SCIENCE">XI - SCIENCE</option> */}
+                      {/* <option value="XII - SCIENCE">XII - SCIENCE</option> */}
+                      {/* <option value="XII - ICCP">XII - ICCP</option> */}
                       <option value="XII - ARTS">XII - ARTS</option>
-                      <option value="XII - COMMERCE">XII - COMMERCE</option>
+                      {/* <option value="XII - COMMERCE">XII - COMMERCE</option> */}
                     </select>
                   </div>
                 </div>
               </div>
-              <br />
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="medium">
-                    Medium
+                  मीडियम
                   </label>
                 </div>
                 <div className="input-group">
@@ -130,19 +136,19 @@ const Addmission = () => {
                     id="medium"
                     required="required"
                   >
-                    <option value="">Select Medium</option>
+                    <option value="">मीडियम चुनें</option>
                     <option value="English">English</option>
-                    <option value="Hindi">Hindi</option>
+                    <option value="Hindi">हिन्दी</option>
                   </select>
                 </div>
               </div>
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="dob">
-                    Date of Birth
+                  जन्मतिथि
                     <br />
                     <span style={{ fontSize: 10 }}>
-                      <b>(As per Required Documents)</b>
+                      <b>(आवश्यक दस्तावेज़ों के अनुसार)</b>
                     </span>
                   </label>
                 </div>
@@ -161,7 +167,7 @@ const Addmission = () => {
                <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row"> 
                 <div className="">
                   <label className="text-black" htmlFor="gender">
-                    Gender
+                  लिंग
                   </label>
                 </div>
                 <div className="">
@@ -170,18 +176,18 @@ const Addmission = () => {
                     id="gender"
                     required="required"
                   >
-                    <option value="">Select Gender</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
+                    <option value="">लिंग चुनें</option>
+                    <option value="Male">बालक</option>
+                    <option value="Female">बालिका</option>
                   </select>{" "}
                 </div>
                 </div>
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="number">
-                    Father Mobile No *<br />
+                  पिता का मोबाइल नंबर *<br />
                     <span style={{ fontSize: 10 }}>
-                      (We will call on this number)
+                      (हम इस नंबर पर कॉल करेंगे)
                     </span>
                   </label>
                 </div>
@@ -203,7 +209,7 @@ const Addmission = () => {
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="address">
-                    Address *
+                  पता *
                   </label>
                 </div>
                 <div className="">
@@ -219,18 +225,17 @@ const Addmission = () => {
               <br />
               </div>
                 <div className="col-xs-12">
-                  <p className="text-black">
-                    Declaration : I HEREBY DECLARE THAT THE DETAILS FILLED ABOVE
-                    IS CORRECT AND I SHALL BE SUBMITTING RELEVANT DOCUMENTS AT
-                    THE TIME OF ADMISSION.
-                  </p>
+                  <input type="checkbox" required />
+                  <label className="text-black ml-3">
+                  घोषणा: मैं यहाँ घोषणा करता हूँ कि ऊपर भरी गई जानकारी सही है और मैं प्रवेश के समय संबंधित दस्तावेज़ सबमिट करूंगा।
+                  </label>
                 </div>
               <input
                 type="submit"
                 className="text-white bg-indigo-500 relative border-0 py-1 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
                 data-loading-text="Sending..."
                 style={{ display: "block", marginTop: 10 }}
-                value={'Submit'}
+                value={'भेजे'}
              />
               <br/>
               <br/>

@@ -5,14 +5,16 @@ const process = () => {
   return (
     <div>
         <Head>
-        <title>Admission Proccess at MTS - MTS School</title>
+        <title>प्रवेश प्रक्रिया - MTS School</title>
         <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school, vision, mission, admission proccess, team, strong, independent, empathetic" />
         <link rel="icon" href="/logo/favicon.png" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
     <div className='m-3 p-2 bg-white' >
-       <h1 className='font-bold text-2xl text-gray-800 p-1 shadow-sm w-1/3'>ADMISSION PROCESS AT MTS</h1>
-      <p>Each day at Mother Teressa Sr. Sec. School is filled with joy and fun. Learning constitutes an integral part of a student’s life, but schools are not just that. The MTS is one of the best English medium schools in Baharawanda Kalan for a reason. The MTS team believes in making each day a memorable one for the students. A bully-free and healthy environment is what the MTS have built so that children can grow up to be strong, independent, and empathetic individuals.</p>
+       <h1 className='font-bold text-2xl text-gray-800 p-1 shadow-sm w-1/3'>MTS में प्रवेश प्रक्रिया</h1>
+      <p>
+      MTS स्कूल में प्रवेश प्रक्रिया ऑनलाइन और ऑफलाइन दोनों तरीकों से की जा सकती है। यह स्कूल एलकेजी से 12वीं तक हिंदी माध्यम और एलकेजी से 8वीं तक अंग्रेजी माध्यम कक्षाओं को प्रदान करता है। इच्छुक अभिभावक ऑनलाइन प्रवेश के लिए आवेदन कर सकते हैं, जहां वे आवश्यक जानकारी भर सकते हैं और आवेदन जमा कर सकते हैं। ऑफलाइन प्रवेश के लिए, अभिभावक स्कूल के प्रशासनिक कार्यालय में जा सकते हैं और वहां आवेदन पत्र भरकर जमा कर सकते हैं। प्रवेश प्रक्रिया में संपूर्ण अभिभावकों को मदद और मार्गदर्शन प्रदान किया जाता है ताकि वे आसानी से और सुरक्षित तरीके से अपने बच्चों को MTS स्कूल में प्रवेश दिला सकें।
+      </p>
     </div>
     </div>
   )

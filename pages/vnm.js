@@ -5,25 +5,25 @@ const vnm = () => {
   return (
     <div>
      <Head>
-        <title>Vision & Mission - MTS School</title>
-        <meta name="description" content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school, vision, mission" />
+        <title>दृष्टि और मिशन - MTS स्कूल</title>
+        <meta name="description" content="मदर तेरेसा सीनियर सेकेंडरी स्कूल बहरावंडा कलां, बहरावांडा कलां में आपका स्वागत है, एडमिशन फॉर्म, अभी संपर्क करें, तुलसीराम जांगिड़, एमटीएस स्कूल तुलसीराम जांगिड़, शिक्षा, अंग्रेजी, हिंदी, प्रवेश, छात्र, छात्रा, शिक्षक, अध्ययन, स्कूल, अच्छा स्कूल, दृष्टि, मिशन" />
         <link rel="icon" href="/logo/favicon.png" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       </Head>
     <div className='m-3 p-2 bg-white mb-32'>
-      <h1 className='font-bold text-2xl text-gray-800 p-1 shadow-sm w-64'>VISION & MISSION</h1>
-      <h2 className='font-bold text-xl'>Vision</h2>
-      <p className='text-lg'>The MTS School is committed to providing its students a stimulating environment to learn and grow, with the understanding of ‘Sanskars’. With discipline as the soul of this school, the Creative is focused on nurturing children to achieve their full potential and inculcating lifelong learning for cognitive development.</p>
-      <h2 className='font-bold text-xl'>Mission</h2>
-      <p className='text-lg'>To have a holistic approach towards a child’s overall personality development is MTS School supreme mission.</p>
-      <h2 className='font-bold text-xl'>Child Centric Environment</h2>
-      <p className='text-lg'>A child centric environment is crucial for young individuals to grow and fly high. With early literacy being a primary goal, the School focus on child’s development and learning is unwavering.</p>
-      <h2 className='font-bold text-xl'>Quality Education</h2>
-      <p className='text-lg'>As a leading educational school, the MTS is strongly committed to delivering quality education with a wholesome culmination of both intellectual and creative aspects.</p>
-      <h2 className='font-bold text-xl'>Safe and protective environment</h2>
-      <p className='text-lg'>A protected and safe environment for a student means everything. As an school, children’s safety is taken very seriously at MTS. With personalised attention to every child, it is ensured that each and every student gets the much-needed care within the school.</p>
-      <h2 className='font-bold text-xl'>Sanskar and discipline</h2>
-      <p className='text-lg'>Lifelong learning which includes building morals, practice and habits which build the traits of a responsible citizen is the MTS’s motto. MTS School nurtures students to be independent and encourages cooperation, socializing and leadership such that they turn out to be better human beings tomorrow.As the leading school in terms of discipline, academics, extra curriculars, events and activities, all the programs are built to fit every student who walks through the doors of MTS School.</p>
+      <h1 className='font-bold text-2xl text-gray-800 p-1 shadow-sm w-64'>दृष्टि और मिशन</h1>
+      <h2 className='font-bold text-xl'>दृष्टि</h2>
+      <p className='text-lg'>MTS स्कूल अपने छात्रों को संस्कार की समझ के साथ सीखने और बढ़ने के लिए एक उत्तेजक वातावरण प्रदान करने के लिए प्रतिबद्ध है। इस स्कूल की आत्मा के रूप में अनुशासन के साथ, क्रिएटिव बच्चों को उनकी पूरी क्षमता प्राप्त करने और संज्ञानात्मक विकास के लिए आजीवन सीखने को बढ़ावा देने पर केंद्रित है।</p>
+      <h2 className='font-bold text-xl'>मिशन</h2>
+      <p className='text-lg'>एक बच्चे के संपूर्ण व्यक्तित्व विकास की दिशा में एक संपूर्णवादी दृष्टिकोण रखना MTS स्कूल का प्रमुख मिशन है।</p>
+      <h2 className='font-bold text-xl'>बाल-मुक्तिवादी पर्यावरण</h2>
+      <p className='text-lg'>बाल-मुक्तिवादी पर्यावरण युवा व्यक्तियों के लिए महत्वपूर्ण है ताकि वे ऊँचाईयों तक पहुंच सकें। प्राथमिक लक्ष्य के रूप में, स्कूल बच्चे के विकास और अधिगम पर केंद्रित है।</p>
+      <h2 className='font-bold text-xl'>गुणवत्ता शिक्षा</h2>
+      <p className='text-lg'>एक अग्रणी शैक्षणिक स्कूल के रूप में, MTS स्कूल गुणवत्ता युक्त शिक्षा को प्रदान करने के लिए सशक्त प्रतिबद्ध है, जिसमें बौद्धिक और रचनात्मक पहलुओं का समापन समाहित होता है।</p>
+      <h2 className='font-bold text-xl'>सुरक्षित और संरक्षित पर्यावरण</h2>
+      <p className='text-lg'>छात्र के लिए एक सुरक्षित और संरक्षित पर्यावरण सबकुछ होता है। MTS में बच्चों की सुरक्षा को बहुत ही गंभीरता से लिया जाता है। प्रत्येक बच्चे को व्यक्तिगत ध्यान देकर, सुनिश्चित किया जाता है कि प्रत्येक छात्र को स्कूल के भीतर आवश्यक देखभाल प्राप्त हो।</p>
+      <h2 className='font-bold text-xl'>संस्कार और अनुशासन</h2>
+      <p className='text-lg'>मध्यावधि शिक्षा जिसमें ज़िम्मेदार नागरिक के गुण, अभ्यास और आदतें निर्माण की जाती है, वही है MTS का मोटो। MTS स्कूल छात्रों को स्वतंत्र बनाने और सहयोग, सामाजिकीकरण और नेतृत्व को प्रोत्साहित करने के लिए प्रोत्साहित करता है ताकि वे कल के बेहतर मानव बन सकें। अनुशासन, शैक्षणिक, अतिरिक्त कार्यक्रम, आयोजन और गतिविधियों के मामले में अग्रणी स्कूल के रूप में, सभी कार्यक्रमों को MTS स्कूल के द्वारा चलाए जाने वाले हर छात्र के लिए बनाया जाता है।</p>
     </div>
     .
     </div>

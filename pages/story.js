@@ -5,53 +5,43 @@ const story = () => {
   return (
     <div>
       <Head>
-        <title>Story - MTS School</title>
+        <title>कहानी - MTS स्कूल</title>
         <meta
           name="description"
-          content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school, vision, mission, story, importance, disciplined, sanskaar"
+          content="mts स्कूल में आपका स्वागत है, मदर टेरेसा सीनियर सेकेंडरी स्कूल बहरावंडा कलां, बहरावनदा कलां, एडमिशन फॉर्म, अब संपर्क करें, तुलसीराम जांगिड़, एमटीएस स्कूल तुलसीराम जांगिड़, शिक्षा, अंग्रेजी, हिंदी, प्रवेश, छात्र, शिक्षार्थी, शिक्षक, अध्ययन, स्कूल, अच्छा स्कूल, दृष्टि, मिशन, कहानी, महत्व, अनुशासन, संस्कार"
         />
         <link rel="icon" href="/logo/favicon.png" />
-
       </Head>
       <div className="m-3 p-2 bg-white mb-32">
         <h1 className="font-bold text-2xl text-gray-800 p-1 shadow-sm w-40">
-          Our Story
+          हमारी कहानी
         </h1>
-        <h2 className="font-bold text-xl">Our Story</h2>
+        <h2 className="font-bold text-xl">हमारी कहानी</h2>
         <p className='text-lg'>
-          The Mother Teressa sr. sec. School is not a one-day-wonder. It is
-          backed up by the tremendous hard work put in by each of its team
-          members over the years. Owing to the consistent and sincere efforts
-          the MTS have been able to achieve a brand value and a goodwill.
+          मदर टेरेसा सीनियर सेकेंडरी स्कूल एक एक दिन का चमत्कार नहीं है। इसे सदियों से हर एक टीम के सदस्यों द्वारा डाली गई भारी मेहनत का समर्थन मिला है। निरंतर और ईमानदार प्रयासों के कारण MTS ने एक ब्रांड मान्यता और अच्छा नाम हासिल किया है।
         </p>
-        <h2 className="font-bold text-xl">1998 – The Inception</h2>
+        <h2 className="font-bold text-xl">1998 - संगठन</h2>
         <p className='text-lg'>
-          The Mother Teressa sr. sec. School started as a Primary School in
-          1998.Blessed to have a highly motivated team of 17 staff members, the
-          MTS School was catering its services to 50 students.
+          मदर टेरेसा सीनियर सेकेंड
+
+री स्कूल 1998 में प्राथमिक स्तर के स्कूल के रूप में शुरू हुआ। 17 कर्मचारियों की उच्च प्रेरित टीम के साथ धन्य है, MTS स्कूल 50 छात्रों की सेवाएं प्रदान कर रहा था।
         </p>
-        <h2 className="font-bold text-xl">Made it to the next milestone</h2>
-        <p className='text-lg'>The Mother Teressa sr. sec. School made own building at 2015.</p>
-        <h2 className="font-bold text-xl">Our Strength</h2>
+        <h2 className="font-bold text-xl">अगले मील की ओर पथ बनाया</h2>
+        <p className='text-lg'>मदर टेरेसा सीनियर सेकेंडरी स्कूल ने 2015 में अपनी खुद की इमारत बनाई।</p>
+        <h2 className="font-bold text-xl">हमारी ताकत</h2>
         <p className='text-lg'>
-          Empowering the MTS School are more than 15 dedicated and hard working
-          Teachers. And, more than 500 students are now an integral part of the
-          MTS family who are making us proud each day by their achievements and
-          outstanding performances.{" "}
+          MTS स्कूल को 15 से अधिक प्रतिष्ठित और मेहनती शिक्षकों का सशक्तिकरण कर रहे हैं। और, 500 से अधिक छात्र अब MTS परिवार का अभिन्न हिस्सा हैं जो हर दिन अपनी उपलब्धियों और अद्वितीय प्रदर्शनों द्वारा हमें गर्व महसूस करवा रहे हैं।
         </p>
-        <h2 className="font-bold text-xl">Paving path to success and core values</h2>
+        <h2 className="font-bold text-xl">सफलता और मूल्यों के मार्ग को बनाने की ओर पत्र प्रवाहित करना</h2>
         <p className='text-lg'>
-          The Mother Teressa sr. sec. School aims at making the next generation
-          a much better version of us. And, to achieve that the school
-          implements modern techniques of imparting knowledge to the students
-          and to educate them in the best possible way. Students are also taught
-          about the importance of being disciplined in one’s life and how the
-          good ‘sanskaars’ helps students in becoming a better human being.
+          मदर टेरेसा सीनियर सेकेंडरी स्कूल का लक्ष्य है कि आने वाली पीढ़ी हमसे बेहतर हो। और, इसको प्राप्त करने के लिए स्कूल छात्रों को ज्ञान के आधुनिक तकनीकों को लागू करने और उन्हें सर्वोत्तम तरीके से
+
+ शिक्षित करने की योजना बनाता है। छात्रों को यह भी सिखाया जाता है कि जीवन में अनुशासन का महत्व क्या है और अच्छे संस्कारों का महत्व कैसे छात्रों को एक बेहतर मानव बनाने में मदद करते हैं।
         </p>
         <ul className="list-disc ml-4">
-          <li>High quality rooms</li>
-          <li>Big playground / prayerground</li>
-          <li>Best Teachers</li>
+          <li>उच्च गुणवत्ता वाले कक्षा</li>
+          <li>बड़ा खेल क्षेत्र / पूजा स्थल</li>
+          <li>सर्वश्रेष्ठ शिक्षकों</li>
         </ul>
       </div>
       .

@@ -65,7 +65,7 @@ const Navbar = ()=>{
                                                 href: "/vnm",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     className: "glass p-1 m-1",
-                                                    children: "VISION AND MISSION"
+                                                    children: "दृष्टि और उद्देश्य"
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
@@ -73,7 +73,7 @@ const Navbar = ()=>{
                                                 href: "/story",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     className: "glass p-1 m-1",
-                                                    children: "OUR STORY"
+                                                    children: "हमारी कहानी"
                                                 })
                                             })
                                         ]
@@ -106,7 +106,7 @@ const Navbar = ()=>{
                                                 href: "/process",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     className: "glass p-1 m-1",
-                                                    children: "ADMISSION PROCCESS AT MTS"
+                                                    children: "MTS में प्रवेश प्रक्रिया"
                                                 })
                                             }),
                                             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
@@ -114,7 +114,7 @@ const Navbar = ()=>{
                                                 href: "/addmission",
                                                 children: /*#__PURE__*/ jsx_runtime_.jsx("li", {
                                                     className: "glass p-1 m-1",
-                                                    children: "ADMISSION ENQUIRY FORM"
+                                                    children: "प्रवेश फार्म"
                                                 })
                                             })
                                         ]
@@ -212,7 +212,7 @@ const Top = ()=>{
         className: "flex space-y-2 lg:space-y-0 flex-col lg:flex-row bg-gray-200 text-black font-bold text-sm p-2",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "left",
+                className: "",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
                     className: "inner",
                     children: [
@@ -225,12 +225,12 @@ const Top = ()=>{
                                     children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
                                         className: "text-black text-sm",
                                         children: [
-                                            "Call us: ",
+                                            "कॉल करे: ",
                                             /*#__PURE__*/ jsx_runtime_.jsx("a", {
                                                 href: "tel:9983760244",
                                                 children: "+91 9983760244"
                                             }),
-                                            " | Mother Teressa Sr. Sec. School"
+                                            " | मदर टेरेसा उच्च माध्यमिक विद्यालय"
                                         ]
                                     })
                                 })
@@ -249,7 +249,7 @@ const Top = ()=>{
                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/career",
                                 "aria-current": "page",
-                                children: "CAREER"
+                                children: "नौकरी"
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
@@ -258,7 +258,7 @@ const Top = ()=>{
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/facilities",
-                                children: "FACILITIES"
+                                children: "सुविधायें"
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
@@ -267,7 +267,7 @@ const Top = ()=>{
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/sitemap",
-                                children: "SITEMAP"
+                                children: "साइटमेप"
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
@@ -276,7 +276,7 @@ const Top = ()=>{
                         /*#__PURE__*/ jsx_runtime_.jsx("li", {
                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/contact",
-                                children: "CONTACT US"
+                                children: "संपर्क करे"
                             })
                         })
                     ]
@@ -288,7 +288,6 @@ const Top = ()=>{
 /* harmony default export */ const components_Top = (Top);
 
 ;// CONCATENATED MODULE: ./pages/_app.js
-// "use client"
 
 
 

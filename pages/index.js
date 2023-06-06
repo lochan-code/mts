@@ -1,4 +1,3 @@
-"use client"
 import { useState } from "react";
 import Image from 'next/image';
 import Link from 'next/link';
@@ -36,8 +35,8 @@ export default function Home() {
         <link rel="apple-touch-icon" href="/logo/favicon.png" />
       </Head>
       <div className="bg-slate-100">
-        <motion.div   initial={{ opacity: 0, y: -100, x: -20 }}
-          whileInView={{ opacity: 1, y: 0, x:0 }} className="flex justify-center"><Image src='/bunner1.png' width={1000} height={500} alt="मदर टेरेसा उच्च माध्यमिक विद्यालय में गर्व से प्रकटित होते हैं छात्रों के परिणाम" /></motion.div>
+        {/* <motion.div   initial={{ opacity: 0, y: -500, x: -20 }}
+          whileInView={{ opacity: 1, y: 0, x:0 }} className="flex justify-center"><Image src='/bunner1.png' width={1000} height={500} alt="मदर टेरेसा उच्च माध्यमिक विद्यालय में गर्व से प्रकटित होते हैं छात्रों के परिणाम" /></motion.div> */}
       <div className='h-[100vh] flex items-center justify-center hero'>
       <div className="space_grotesk">
         <motion.h1
@@ -46,7 +45,7 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className='text-black text-[7vw] sm:text-[4vw] font-bold m-3'
         >
-          Mother Teressa Senior Secondary School
+          मदर टेरेसा उच्च माध्यमिक विद्यालय
         </motion.h1>
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -54,7 +53,7 @@ export default function Home() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className='text-gray-700 text-[5vw] font-bold m-3'
         >
-          Baharawanda Kalan
+          बहरावंडा कलाँ
         </motion.h2>
         <div className="flex ml-3">
               <motion.div
@@ -65,7 +64,7 @@ export default function Home() {
                 <Link
                   href="mailto:contactmtsschool@gmail.com"
                   >
-                  Contact Us
+                  संपर्क करे
                 </Link>
               </motion.div>
               <motion.div
@@ -76,7 +75,7 @@ export default function Home() {
                 <Link
                   href="/addmission"
                 >
-                  Addmission Now
+                  प्रवेश ले 
                 </Link>
               </motion.div>
               </div>
@@ -106,55 +105,47 @@ export default function Home() {
 </div>
 
 <div>
-  <h1 className='text-black text-center text-4xl font-bold py-6'>Facilities</h1>
+  <h1 className='text-black text-center text-4xl font-bold py-6'>सुविधाएँ</h1>
   <motion.div  initial={{y: -100}} whileInView={{y: 0}} transition={{delay: 0.3}} className="flex flex-wrap p-2 justify-center items-center">
     <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Medium: Hindi</p>
+      <p className='ml-1 text-sm text-gray-800'>माध्यम: हिन्दी और अंग्रेजी</p>
     </motion.div>
     <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Medium: English</p>
+      <p className='ml-1 text-sm text-gray-800'>L.K.G. से 12वीं तक</p>
     </motion.div>
     <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>From 1 to 12</p>
+      <p className='ml-1 text-sm text-gray-800'>अध्यापक: 15+</p>
     </motion.div>
     <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Total Teachers: 15+</p>
+      <p className='ml-1 text-sm text-gray-800'>बिजली</p>
     </motion.div>
     <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Male Teachers: 10+</p>
+      <p className='ml-1 text-sm text-gray-800'>आरो का पानी</p>
     </motion.div>
     <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Female Teachers: 2+</p>
+      <p className='ml-1 text-sm text-gray-800'>ग्राउंड</p>
     </motion.div>
     <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Electricity</p>
-    </motion.div>
-    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
-      <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Library</p>
-    </motion.div>
-    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
-      <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Playground</p>
-    </motion.div>
-    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
-      <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Drinking Water</p>
-    </motion.div>
-    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
-      <Image alt='facilities mts school' src="/icons/check.png" width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Contact Teacher</p>
+      <p className='ml-1 text-sm text-gray-800'>विद्यार्थी का अध्यापक से संपर्क</p>
     </motion.div>
     <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
       <Image alt='facilities mts school' src="/icons/check.png" className='max-w-[768px]' width={40} height={40} />
-      <p className='ml-1 text-sm text-gray-800'>Students Motivated</p>
+      <p className='ml-1 text-sm text-gray-800'>अच्छे संस्कार</p>
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+      <Image alt='facilities mts school' src="/icons/check.png" className='max-w-[768px]' width={40} height={40} />
+      <p className='ml-1 text-sm text-gray-800'>जोशीले विद्यार्थी</p>
+    </motion.div>
+    <motion.div initial={{x: -30}} whileInView={{x: 0}} transition={{delay: 0.5}} className="m-3 bg-white rounded-lg shadow-lg flex justify-center p-3 items-center">
+      <Image alt='facilities mts school' src="/icons/check.png" className='max-w-[768px]' width={40} height={40} />
+      <p className='ml-1 text-sm text-gray-800'>शिक्षा के साथ संस्कार</p>
     </motion.div>
   </motion.div>
 </div>
@@ -210,11 +201,9 @@ export default function Home() {
         <Image alt="bus photo" src="/bus.jpg" width={500} height={350} className="rounded-md shadow-xl" />
       </motion.div>
       <div className="px-8 md:w-1/2 py-6 bg-white rounded-md shadow-xl">
-        <h1 className="text-2xl font-semibold text-gray-500 mb-4">School Bus Service Available</h1>
+        <h1 className="text-2xl font-semibold text-gray-500 mb-4">वाहन सेवा उप्लब्द हैं |</h1>
         <p className="text-gray-500 mb-4">
-          Our school provides a reliable bus service for students residing in several villages.
-          We have a dedicated team of trained drivers who ensure safe transportation.
-          Here are some of the villages where our bus service is available:
+हमारे विद्यालय में आस-पास के ग्रामों के विद्यार्थियों के लिए वाहन सेवा उपलब्ध है। हमारे पास अनुभवी चालक हैं जो सुरक्षित वाहन चला सकते हैं। निम्नलिखित ग्रामों में वाहन सेवा उपलब्ध है:
         </p>
         <motion.ul
           initial={{ opacity: 0, y: 20 }}
@@ -227,49 +216,50 @@ export default function Home() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            Piplet
+            पिपलेट
           </motion.li>
           <motion.li
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            Kudana
+           कुड़ाना
           </motion.li>
           <motion.li
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            Kosra
+            कोसरा
           </motion.li>
         </motion.ul>
+        <p className="text-gray-500 mb-4">इन ग्रामों के विद्यार्थियों को सुरक्षित और समय पर विद्यालय पहुंचने के लिए वाहन सेवा प्रदान की जाती है।</p>
       </div>
     </div>
 
 
 <div className="flex flex-col justify-center bg-slate-100 text-black items-center p-5">
   <div className="wrapper">
-    <header>Send us a Message</header>
+    <header>हमें संदेश भेजे</header>
     <form id="contact" method='POST' action='https://script.google.com/macros/s/AKfycbyljiE-vfkaJ_eHmDvmv2mNkRWMTM1sXSEdBFEwuy0U1CdNO2UxbJ0Cye6ccLRMx4gCzg/exec'>
       <div className="dbl-field">
         <div className="field">
-          <input autoComplete="true" required type="text" name="name" placeholder="Enter your name" />
+          <input autoComplete="true" required type="text" name="name" placeholder="आपका नाम लिखे" />
         </div>
         <div className="field">
-          <input autoComplete="true" required type="email" name="email" placeholder="Enter your email" />
+          <input autoComplete="true" required type="email" name="email" placeholder="आपका ईमेल लिखे" />
         </div>
       </div>
       <div className="message">
         <textarea autoComplete="true" required
-          placeholder="Write your message"
+          placeholder="आपका संदेश लिखे"
           name="message"
           defaultValue={""}
         />
       </div>
       <div className="button-area">
         <button type="submit">
-          Send Message
+          संदेश भेजे
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"

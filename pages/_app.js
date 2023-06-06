@@ -1,4 +1,3 @@
-// "use client"
 import Navbar from "../components/navbar";
 import "../styles/globals.css";
 import Top from "../components/Top";

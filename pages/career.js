@@ -29,16 +29,16 @@ const Career = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className='text-black text-[7vw] sm:text-[4vw] font-bold m-3'
         >
-          Join us and work with{" "}
-        </motion.h1>
-        <motion.h2
+          काम करे <motion.span
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className='text-gray-700 text-[5vw] font-bold m-3'
+          className='text-gray-700 text-[5v] font-bold'
         >
-          MTS School
-        </motion.h2>
+          MTS
+        </motion.span> परिवार के साथ{" "}
+        </motion.h1>
+       
             <motion.div
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
@@ -47,7 +47,7 @@ const Career = () => {
                 <Link
                   href="#career"
                   >
-                  APPLY NOW
+                  अभी जुड़े
                 </Link>
               </motion.div>
           </div>
@@ -56,26 +56,19 @@ const Career = () => {
             <motion.h1   initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }} className="font-bold px-4 py-2 text-3xl text-black shadow-lg">
-              You’re in good company!
+              आप अच्छी संस्थान मे हो
             </motion.h1>
             <motion.p   initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }} className="text-xl bruno text-black mb-2">
-              We are so fortunate to have a team of talented and dedicated
-              educators like you here at our school. Your commitment to our
-              students and their success is truly inspiring, and it is a
-              privilege to work alongside such passionate and skilled
-              professionals. Thank you for all that you do, and for being a
-              vital part of our school community. We are proud to have you on
-              our team and feel confident that together, we can continue to
-              provide an exceptional education to our students.
+             हमारे विद्यालय में आप जैसे प्रतिभाशाली और समर्पित शिक्षाविद्यार्थियों की टीम होने पर हम बहुत भाग्यशाली हैं। आपका विद्यार्थियों के प्रति समर्पण वाकई प्रेरणादायी है, और इतने संवेदनशील और कुशल पेशेवरों के साथ काम करना एक गर्व की बात है। आपके सभी प्रयासों के लिए धन्यवाद, और हमारे विद्यालय समुदाय का महत्वपूर्ण हिस्सा होने के लिए। हमें आपकी टीम में गर्व है, और हम आपके साथ मिलकर यकीन रखते हैं कि हम संयुक्त रूप से हमारे छात्रों को एक उत्कृष्ट शिक्षा प्रदान करने में सफल रहेंगे।
             </motion.p>
           </div>
         <motion.section  initial={{ y: -300 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }} className="bg-gray-100 p-5 mb-16" id="career">
               <h1 className="mb-4 text-4xl ubuntu tracking-tight font-extrabold text-black">
-              Grow your career with MTS School
+              MTS School के साथ अपना करियर आगे बढ़ाएं
               </h1>
     <form method="POST" action="https://script.google.com/macros/s/AKfycbxbuazVKQsM0y6yBg5MQTgZbpTdaCuzjNv8iNFngMj4Rgapb3KF2X_bYmoi0mNciqryPg/exec">
     <h2 className="mb-4 text-xl font-bold ubuntu text-black">

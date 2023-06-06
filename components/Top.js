@@ -4,14 +4,13 @@ import React from "react";
 const Top = () => {
   return (
     <div className="flex space-y-2 lg:space-y-0 flex-col lg:flex-row bg-gray-200 text-black font-bold text-sm p-2">
-      <div className="left">
+      <div className="">
         <div className="inner">
           <div className="header-widget widget_text header-left-widget">
             {" "}
             <div className="textwidget">
               <p className="text-black text-sm">
-                Call us: <a href="tel:9983760244">+91 9983760244</a> | Mother
-                Teressa Sr. Sec. School
+                कॉल करे: <a href="tel:9983760244">+91 9983760244</a> | मदर टेरेसा उच्च माध्यमिक विद्यालय
               </p>
             </div>
           </div>{" "}
@@ -21,19 +20,19 @@ const Top = () => {
         <ul className="flex flex-wrap justify-end space-x-2">
           <li>
             <Link href={"/career"} aria-current="page">
-              CAREER
+              नौकरी
             </Link>
           </li>
           <li>|</li>
           <li>
             <Link href={"/facilities"}>
-              FACILITIES
+              सुविधायें
             </Link>
           </li>
           <li>|</li>
           <li>
             <Link href={"/sitemap"}>
-              SITEMAP
+              साइटमेप
             </Link>
           </li>
           <li>|</li>
@@ -48,7 +47,7 @@ const Top = () => {
           {/* <li>|</li> */}
           <li>
             <Link href={"/contact"}>
-              CONTACT US
+              संपर्क करे
             </Link>
           </li>
           {/* <li>|</li> */}

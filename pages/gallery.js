@@ -52,12 +52,12 @@ const Gallery = () => {
             <TinderCard
               key={person.url}
               preventSwipe={["up", "down"]}
-              onSwipe={(dir) => swiped(dir, person.name)}
-              onCardLeftScreen={() => outofFrame(person.name)}
+              // onSwipe={(dir) => swiped(dir, person.name)}
+              // onCardLeftScreen={() => outofFrame(person.name)}
             >
               <div className="glass-blur p-2 m-2 flex w-72 ">
                 <Image
-                  alt="photo"
+                    alt="photo"
                   src={`${person.url}`}
                   className="w-full hover:scale-150 transition-all"
                   width={500}

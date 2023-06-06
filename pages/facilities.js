@@ -1,26 +1,27 @@
 import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+
 const facilities = () => {
   return (
     <div>
         <Head>
-            <title>FACILITIES - MTS School | Mother Teressa Senior Secondary School Baharawanda Kalan</title>
+            <title>FACILITIES - MTS School | मदर टेरेसा सीनियर सेकेंडरी स्कूल बहरावांडा कलां</title>
             <meta
           name="description"
-          content="welcome to mts school, mother teressa senior secondary school baharawanda kalan, baharawanada kalan, addmission form, contact now, tulsiram jangid, mts school tulsiram jangid, education, english, hindi, admission, students, student, teacher, study, school, good school, facilities"
+          content="मदर टेरेसा सीनियर सेकेंडरी स्कूल बहरावांडा कलां में आपका स्वागत है, एमटीएस स्कूल तुलसीराम जांगिड, शिक्षा, हिंदी, अध्यापक, छात्र, स्टडी, स्कूल, अच्छे स्कूल, सुविधाएँ"
         />
         <link rel="icon" href="/logo/favicon.png" />
         </Head>
           <div className="m-3 p-2 bg-white mb-32">
         <h1 className="font-bold text-2xl text-gray-800 p-1 shadow-sm w-1/3">
-        FACILITIES AT MTS School
+        एमटीएस स्कूल में सुविधाएँ
         </h1>
         <div className="flex justify-center items-center">
       <div className="txt">
-        <h2 className="font-bold text-xl">Kids Playground</h2>
+        <h2 className="font-bold text-xl">बच्चों का खेल क्षेत्र</h2>
         <p className='text-lg'>
-        Outdoor playing is important for balanced and healthy development of a child. Children need that outdoor space, physically and metaphorically speaking, to explore, experiment and invent in and to play and learn freely. In MTS School Kids Paradise, kids feel fun & relax from stress. It is really a paradise for them.
+        बाहरी खेलना एक बच्चे के संतुलित और स्वस्थ विकास के लिए महत्वपूर्ण है। बच्चों को उन्हें खोजने, प्रयोग करने और आविष्कार करने के लिए बाहरी स्थान, भौतिक और पर्यायतः की आवश्यकता होती है। एमटीएस स्कूल में बच्चों को मजेदार और तनावमुक्त महसूस होता है। यह वास्तव में उनके लिए एक स्वर्ग है।
         </p>
         </div>
         <Image
@@ -28,24 +29,23 @@ const facilities = () => {
         alt="mts"
       />
       </div>
-        <h2 className="font-bold text-xl">Cocurricular Activities</h2>
+        <h2 className="font-bold text-xl">सह-अवकाशीय गतिविधियाँ</h2>
         <p className='text-lg'>
-        Co-curricular activities are those which are under taken side by side with the curricular activities. A co-curricular activity essentially takes place outside a typical pen and pencil classroom experience. It gives the students an opportunity to develop particular skills and exhibit their non-academic abilities. They actually complement the curricular activities and groom the students in the Art of living & working together.
+        सह-अवकाशीय गतिविधियाँ वे होती हैं जो पाठ्यक्रमीय गतिविधियों के साथ एकत्रित की जाती हैं। एक सह-अवकाशीय गतिविधि मूल रूप से एक पाठशाला के अभ्यास कक्षा अनुभव के बाहर होती है। इसे छात्रों को विशेष कौशल विकसित करने और उनकी गैर-शैक्षिक क्षमताओं को प्रदर्शित करने का अवसर प्रदान करती है। वास्तव में, वे पाठ्यक्रमीय गतिविधियों का पूरक होती हैं और छात्रों को जीवन और सह-कार्य का कला विकसित करती हैं।
         </p>
-        <h2 className="font-bold text-xl">Quality Education</h2>
+        <h2 className="font-bold text-xl">उच्चतम शिक्षा</h2>
         <p className='text-lg'>
-        As a leading educational school, the MTS is strongly committed to delivering quality education with a wholesome culmination of both intellectual and creative aspects.
+        एमटीएस के रूप में अग्रणी शैक्षणिक स्कूल के रूप में, हम गुणवत्तापूर्ण शिक्षा को साथ ही साथ बौद्धिक और रचनात्मक पहलुओं के संगम के साथ प्रदान करने के लिए मजबूती से प्रतिबद्ध हैं।
         </p>
-        <h2 className="font-bold text-xl">Best Teachers</h2>
+        <h2 className="font-bold text-xl">सर्वश्रेष्ठ शिक्षक</h2>
         <p className='text-lg'>
-        the best teachers are dedicated professionals who care deeply about their students education and well-being. They have the ability to make a lasting impact on their students lives, and their contributions to education are invaluable.
+        सर्वश्रेष्ठ शिक्षक वे प्रतिष्ठित पेशेवर होते हैं जो अपने छात्रों की शिक्षा और कल्याण के प्रति गहराई से संलग्न होते हैं। उनकी क्षमता होती है अपने छात्रों के जीवन पर चिरस्थायी प्रभाव डालने की, और उनके शिक्षा में योगदान अमूल्य होता है।
         </p>
-        <h2 className="font-bold text-xl">School Environment</h2>
+        <h2 className="font-bold text-xl">स्कूल वातावरण</h2>
         <p className='text-lg'>
-        a good school environment is essential to fostering a positive learning experience and supporting student success. It includes a sense of community, access to resources and opportunities, skilled educators, and measures to promote student safety and well-being.
+        एक अच्छा स्कूल वातावरण सकारात्मक शिक्षा अनुभव को प्रोत्साहित करने और छात्र सफलता का समर्थन करने के लिए महत्वपूर्ण है। इसमें समुदाय का एक अहसास, संसाधनों और अवसरों का पहुंच, कुशल शिक्षकों की उपस्थिति और छात्र सुरक्षा और कल्याण को बढ़ावा देने के उपाय शामिल होते हैं।
         </p>
       </div>
-      .
     </div>
   )
 }

@@ -19,16 +19,16 @@ const contact = () => {
             <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
               <div className="lg:w-1/2 px-6">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                  ADDRESS
+                पता
                 </h2>
                 <p className="mt-1 text-lg">
-                  MOTHER TERESSA SENIOR SECONDARY SCHOOL, Bahrawada Kalan,
-                  Rajasthan (322025)
+                मदर टेरेसा उच्च माध्यमिक विद्यालय, बहरावंडा कलाँ
+                  राजस्थान (322025)
                 </p>
               </div>
               <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                  EMAIL
+                  ईमेल
                 </h2>
                 <a
                   className="text-indigo-500 leading-relaxed"
@@ -37,7 +37,7 @@ const contact = () => {
                   contactmtsschool@gmail.com
                 </a>
                 <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                  PHONE
+                  फोन
                 </h2>
                 <a className="leading-relaxed" href="tel:9983760244">
                   +91 9983760244
@@ -47,7 +47,7 @@ const contact = () => {
           </div>
           <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col text-left md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
             <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
-              Contact Us
+            संपर्क करें
             </h2>
             <form
               id="contact"
@@ -60,7 +60,7 @@ const contact = () => {
                     required
                     type="text"
                     name="name"
-                    placeholder="Enter your name"
+                    placeholder="आपका नाम लिखे"
                   />
                 </div>
                 <div className="field">
@@ -68,21 +68,21 @@ const contact = () => {
                     required
                     type="email"
                     name="email"
-                    placeholder="Enter your email"
+                    placeholder="आपका ईमेल लिखे"
                   />
                 </div>
               </div>
               <div className="message">
                 <textarea
                   required
-                  placeholder="Write your message"
+                  placeholder="आपका संदेश लिखे"
                   name="message"
                   defaultValue={""}
                 />
               </div>
               <div className="button-area">
                 <button type="submit">
-                  Send Message
+                  संदेश भेजे
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlnsXlink="http://www.w3.org/1999/xlink"

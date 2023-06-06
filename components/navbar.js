@@ -16,10 +16,10 @@ const Navbar = () => {
             <div className="transition-all icon-parent">
               <ul className="glass text-center flex flex-col text-black fixed left-14 text-xl p-3">
                 <Link className='cursor-pointer' href="/vnm">
-                    <li className="glass p-1 m-1">VISION AND MISSION</li>
+                    <li className="glass p-1 m-1">दृष्टि और उद्देश्य</li>
                 </Link>
                 <Link className='cursor-pointer' href="/story">
-                    <li className="glass p-1 m-1">OUR STORY</li>
+                    <li className="glass p-1 m-1">हमारी कहानी</li>
                 </Link>
                 {/* <Link className='cursor-pointer' href={'/'}><li className='glass p-1 m-1'>ACHIEVEMENTS</li></Link> */}
               </ul>
@@ -34,10 +34,10 @@ const Navbar = () => {
             <div className="transition-all icon-parent">
               <ul className="glass text-center flex flex-col text-black fixed left-14 text-xl p-3">
                 <Link className='cursor-pointer' href="/process">
-                    <li className="glass p-1 m-1">ADMISSION PROCCESS AT MTS</li>
+                    <li className="glass p-1 m-1">MTS में प्रवेश प्रक्रिया</li>
                 </Link>
                 <Link className='cursor-pointer' href="/addmission">
-                    <li className="glass p-1 m-1">ADMISSION ENQUIRY FORM</li>
+                    <li className="glass p-1 m-1">प्रवेश फार्म</li>
                 </Link>
               </ul>
               <div className=" glass-blur md:p-3 p-1 flex justify-center items-center z-50 cursor-pointer">
