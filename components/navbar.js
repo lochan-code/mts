@@ -1,47 +1,58 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <>
       <div className="fixed transition-all glass md:p-5 p-2 h-15 w-full items-center justify-start bottom-0 md:h-20 flex right-2 space-x-2">
-        <div className="hidden sm:flex mr-5">
-          <Link className='cursor-pointer' href="/">
-              <Image alt="MTS" src="/logo.png" width={50} height={50} />
+        <div className="sm:flex mx-3">
+          <Link className="cursor-pointer" href="https://mtsbk.vercel.app">
+            <Image alt="MTS" src="/logo.png" width={50} height={50} />
           </Link>
         </div>
-        <Link className='cursor-pointer' href="/about">
-          <a >
+
+        <Link className="cursor-pointer" href="/about">
+          <a>
             <div className="transition-all icon-parent">
               <ul className="glass text-center flex flex-col text-black fixed left-14 text-xl p-3">
-                <Link className='cursor-pointer' href="/vnm">
-                    <li className="glass p-1 m-1">दृष्टि और उद्देश्य</li>
+                <Link className="cursor-pointer" href="/vnm">
+                  <li className="glass p-1 m-1">दृष्टि और उद्देश्य</li>
                 </Link>
-                <Link className='cursor-pointer' href="/story">
-                    <li className="glass p-1 m-1">हमारी कहानी</li>
+                <Link className="cursor-pointer" href="/story">
+                  <li className="glass p-1 m-1">हमारी कहानी</li>
                 </Link>
                 {/* <Link className='cursor-pointer' href={'/'}><li className='glass p-1 m-1'>ACHIEVEMENTS</li></Link> */}
               </ul>
               <div className=" glass-blur md:p-3 p-1 flex justify-center items-center cursor-pointer ">
-                <Image alt="photo" src="/icons/about.png" width={30} height={30} />
+                <Image
+                  alt="photo"
+                  src="/icons/about.png"
+                  width={30}
+                  height={30}
+                />
               </div>
             </div>
           </a>
         </Link>
-        <Link className='cursor-pointer' href="/addmission">
-          <a >
+        <Link className="cursor-pointer" href="/addmission">
+          <a>
             <div className="transition-all icon-parent">
               <ul className="glass text-center flex flex-col text-black fixed left-14 text-xl p-3">
-                <Link className='cursor-pointer' href="/process">
-                    <li className="glass p-1 m-1">MTS में प्रवेश प्रक्रिया</li>
+                <Link className="cursor-pointer" href="/process">
+                  <li className="glass p-1 m-1">MTS में प्रवेश प्रक्रिया</li>
                 </Link>
-                <Link className='cursor-pointer' href="/addmission">
-                    <li className="glass p-1 m-1">प्रवेश फार्म</li>
+                <Link className="cursor-pointer" href="/addmission">
+                  <li className="glass p-1 m-1">प्रवेश फार्म</li>
                 </Link>
               </ul>
               <div className=" glass-blur md:p-3 p-1 flex justify-center items-center z-50 cursor-pointer">
-                <Image alt="photo" src="/icons/addmission.png" width={30} height={30} />
+                <Image
+                  alt="photo"
+                  src="/icons/addmission.png"
+                  width={30}
+                  height={30}
+                />
               </div>
             </div>
           </a>
@@ -54,12 +65,17 @@ const Navbar = () => {
       </div>
       </div>
       </Link> */}
-        <Link className='cursor-pointer' href="/gallery">
-            <div className="transition-all icon-parent">
-              <div className=" glass-blur md:p-3 p-1 flex justify-center z-50 items-center cursor-pointer">
-                <Image alt="photo" src="/icons/gallery.png" width={30} height={30} />
-              </div>
+        <Link className="cursor-pointer" href="/gallery">
+          <div className="transition-all icon-parent">
+            <div className=" glass-blur md:p-3 p-1 flex justify-center z-50 items-center cursor-pointer">
+              <Image
+                alt="photo"
+                src="/icons/gallery.png"
+                width={30}
+                height={30}
+              />
             </div>
+          </div>
         </Link>
         <a
           className=" hover:scale-75 transition-all hover:rotate-12 z-50"
@@ -70,7 +86,6 @@ const Navbar = () => {
         <a
           className=" hover:scale-75 transition-all hover:rotate-12 z-50"
           href="mailto:contactmtsschool@gmail.com"
-          
         >
           <Image alt="photo" src="/icons/mail.png" width={40} height={40} />
         </a>
@@ -103,8 +118,8 @@ const Navbar = () => {
              h.parentNode.insertBefore(j, h);
            })(window, document, "script", "https://waw.gallabox.com");
          `,
-     }}
-   />
+        }}
+      />
     </>
   );
 };

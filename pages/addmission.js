@@ -21,7 +21,7 @@ const Addmission = () => {
           method="POST"
           id="addmissionForm"
           name="addmissionForm"
-          className="bg-white m-10 rounded-lg p-8 flex flex-col md:ml-auto cursor-default"
+          className="bg-white m-2 rounded-lg p-8 flex flex-col cursor-default"
         >
           <span className="help-block alert-success" />
           <h4 className="text-gray-900 text-lg font-medium title-font mb-5">
@@ -32,7 +32,7 @@ const Addmission = () => {
               ध्यान दें: सभी एंट्री कैपिटल लेटर में होनी चाहिए।
             </span>
           </span>
-        <div className="flex w-[100vw] flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 w-full items-center sm:items-start">
+        <div className="flex flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 w-full items-center sm:items-start">
               <div className="flex md:m-2 m-1 justify-center items-center flex-col sm:flex-row">
                 <div className="">
                   <label className="text-black" htmlFor="name">

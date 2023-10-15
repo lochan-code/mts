@@ -4,10 +4,10 @@ import Top from "../components/Top";
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <html lang="en">
+    <div>
       <Top />
       <Component {...pageProps} />
       <Navbar />
-    </html>
+      </div>
   );
 }

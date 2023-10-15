@@ -4,7 +4,6 @@ import React from "react";
 const Top = () => {
   return (
     <div className="flex space-y-2 lg:space-y-0 flex-col lg:flex-row bg-gray-200 text-black font-bold text-sm p-2">
-      <div className="">
         <div className="inner">
           <div className="header-widget widget_text header-left-widget">
             {" "}
@@ -15,7 +14,6 @@ const Top = () => {
             </div>
           </div>{" "}
         </div>
-      </div>
       <div className="lg:absolute lg:right-2">
         <ul className="flex flex-wrap justify-end space-x-2">
           <li>

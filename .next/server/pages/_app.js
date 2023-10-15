@@ -38,10 +38,10 @@ const Navbar = ()=>{
                 className: "fixed transition-all glass md:p-5 p-2 h-15 w-full items-center justify-start bottom-0 md:h-20 flex right-2 space-x-2",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                        className: "hidden sm:flex mr-5",
+                        className: "sm:flex mx-3",
                         children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                             className: "cursor-pointer",
-                            href: "/",
+                            href: "https://mtsbk.vercel.app",
                             children: /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
                                 alt: "MTS",
                                 src: "/logo.png",
@@ -211,34 +211,31 @@ const Top = ()=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         className: "flex space-y-2 lg:space-y-0 flex-col lg:flex-row bg-gray-200 text-black font-bold text-sm p-2",
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "",
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "inner",
-                    children: [
-                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                            className: "header-widget widget_text header-left-widget",
-                            children: [
-                                " ",
-                                /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                                    className: "textwidget",
-                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
-                                        className: "text-black text-sm",
-                                        children: [
-                                            "कॉल करे: ",
-                                            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                                href: "tel:9983760244",
-                                                children: "+91 9983760244"
-                                            }),
-                                            " | मदर टेरेसा उच्च माध्यमिक विद्यालय"
-                                        ]
-                                    })
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                className: "inner",
+                children: [
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        className: "header-widget widget_text header-left-widget",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                className: "textwidget",
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("p", {
+                                    className: "text-black text-sm",
+                                    children: [
+                                        "कॉल करे: ",
+                                        /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                                            href: "tel:9983760244",
+                                            children: "+91 9983760244"
+                                        }),
+                                        " | मदर टेरेसा उच्च माध्यमिक विद्यालय"
+                                    ]
                                 })
-                            ]
-                        }),
-                        " "
-                    ]
-                })
+                            })
+                        ]
+                    }),
+                    " "
+                ]
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 className: "lg:absolute lg:right-2",
@@ -293,8 +290,7 @@ const Top = ()=>{
 
 
 function MyApp({ Component , pageProps  }) {
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("html", {
-        lang: "en",
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(components_Top, {}),
             /*#__PURE__*/ jsx_runtime_.jsx(Component, {
